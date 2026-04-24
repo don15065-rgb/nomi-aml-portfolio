@@ -1,95 +1,166 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Nomi Sohail | AML Compliance Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noman Sohail | AML & Compliance Professional</title>
 
 <style>
-body{
+*{
 margin:0;
-font-family:Arial,sans-serif;
-background:#0f172a;
-color:#e2e8f0;
-line-height:1.6;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#07111f;
+color:#e8edf5;
+line-height:1.7;
 }
 
 header{
-background:linear-gradient(135deg,#020617,#1e3a8a);
+background:linear-gradient(135deg,#07111f,#0f2745);
+padding:70px 20px;
 text-align:center;
-padding:50px 20px;
+border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
 .profile{
-width:170px;
-height:170px;
+width:180px;
+height:180px;
 border-radius:50%;
 object-fit:cover;
-border:5px solid #38bdf8;
-box-shadow:0 0 25px rgba(56,189,248,0.45);
-margin-bottom:20px;
+border:4px solid #c9a227;
+box-shadow:0 0 30px rgba(201,162,39,0.35);
+margin-bottom:25px;
 }
 
 header h1{
-margin:0;
-font-size:42px;
-color:#38bdf8;
+font-size:48px;
+color:#ffffff;
+margin-bottom:10px;
 }
 
-header p{
+header h2{
 font-size:20px;
-color:#cbd5e1;
-margin-top:10px;
+font-weight:normal;
+color:#c9d6e8;
+margin-bottom:25px;
 }
 
 .button{
 display:inline-block;
-margin:10px;
-padding:12px 18px;
-background:#38bdf8;
-color:#020617;
+margin:8px;
+padding:12px 20px;
+background:#c9a227;
+color:#07111f;
 text-decoration:none;
-border-radius:10px;
 font-weight:bold;
+border-radius:8px;
+transition:0.3s;
+}
+
+.button:hover{
+opacity:0.85;
 }
 
 nav{
-background:#020617;
-text-align:center;
+background:#0b1a2b;
 padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:999;
+border-bottom:1px solid rgba(255,255,255,0.06);
 }
 
 nav a{
-color:#38bdf8;
-margin:0 10px;
+color:#ffffff;
 text-decoration:none;
+margin:0 12px;
+font-size:15px;
 font-weight:bold;
 }
 
+.container{
+max-width:1100px;
+margin:auto;
+padding:30px 18px;
+}
+
 section{
-max-width:900px;
-margin:30px auto;
-background:#1e293b;
+background:#0f1f33;
 padding:30px;
-border-radius:18px;
+margin-bottom:25px;
+border-radius:14px;
+border:1px solid rgba(255,255,255,0.05);
 }
 
-h2{
-color:#38bdf8;
-border-bottom:1px solid #334155;
-padding-bottom:8px;
+h3{
+font-size:28px;
+margin-bottom:18px;
+color:#c9a227;
 }
 
-.tag{
+p{
+margin-bottom:15px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.card{
+background:#132841;
+padding:18px;
+border-radius:12px;
+}
+
+.skill{
 display:inline-block;
-background:#334155;
-padding:9px 14px;
+padding:8px 14px;
 margin:6px;
-border-radius:999px;
+background:#132841;
+border-radius:30px;
+font-size:14px;
 }
 
 footer{
 text-align:center;
-padding:30px;
-color:#94a3b8;
+padding:35px 20px;
+color:#9eb0c7;
+font-size:14px;
+}
+
+.small{
+font-size:15px;
+color:#cbd7e6;
+}
+
+.highlight{
+color:#ffffff;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+
+header h1{
+font-size:38px;
+}
+
+header h2{
+font-size:18px;
+}
+
+nav a{
+display:inline-block;
+margin:6px;
+font-size:14px;
+}
 }
 </style>
 </head>
@@ -100,66 +171,157 @@ color:#94a3b8;
 
 <img src="1776953978502.png" class="profile">
 
-<h1>Nomi Sohail</h1>
+<h1>Noman Sohail</h1>
 
-<p>CAMS Certified | AML / KYC / Compliance | Financial Regulation</p>
+<h2>
+CAMS Certified | Qualified Lawyer | LLM University of Edinburgh<br>
+AML • Compliance • Financial Crime • SQL
+</h2>
+
+<a class="button" href="Noman_Sohail_Resume%20(1).pdf" target="_blank">Download CV</a>
 
 <a class="button" href="https://www.linkedin.com/in/noman-sohail-52742b200/" target="_blank">LinkedIn</a>
 
-<a class="button" href="Noman_Sohail_Resume%20(1).pdf" target="_blank">Download CV</a>
+<a class="button" href="#contact">Contact</a>
 
 </header>
 
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
-<a href="#education">Education</a>
+<a href="#certifications">Certifications</a>
+<a href="#whyhire">Why Hire Me</a>
 <a href="#contact">Contact</a>
 </nav>
 
+<div class="container">
+
 <section id="about">
-<h2>About Me</h2>
+
+<h3>Professional Hub</h3>
 
 <p>
-I am a CAMS Certified AML professional with academic strength in banking law,
-regulation, compliance and financial crime prevention.
+I am a cross-disciplinary professional operating at the intersection of
+<span class="highlight">law, financial regulation, AML compliance, and data-driven risk analysis.</span>
+My profile combines legal training, advanced financial education, and technical capability.
+</p>
+
+<p>
+I built this platform as a direct point of contact for recruiters, firms, and organisations seeking someone who can contribute beyond routine box-ticking compliance.
 </p>
 
 </section>
 
 <section id="skills">
-<h2>Skills</h2>
 
-<span class="tag">AML</span>
-<span class="tag">KYC/CDD</span>
-<span class="tag">EDD</span>
-<span class="tag">Sanctions</span>
-<span class="tag">Transaction Monitoring</span>
-<span class="tag">FATF</span>
-<span class="tag">Risk Analysis</span>
+<h3>Core Skills</h3>
+
+<div>
+<span class="skill">AML/CFT</span>
+<span class="skill">KYC / CDD</span>
+<span class="skill">Enhanced Due Diligence</span>
+<span class="skill">Transaction Monitoring</span>
+<span class="skill">Sanctions Screening</span>
+<span class="skill">PEP Reviews</span>
+<span class="skill">SAR / STR Logic</span>
+<span class="skill">Risk Assessment</span>
+<span class="skill">FATF Standards</span>
+<span class="skill">Regulatory Analysis</span>
+<span class="skill">SQL</span>
+<span class="skill">Microsoft SQL Server</span>
+</div>
 
 </section>
 
-<section id="education">
-<h2>Education</h2>
+<section id="certifications">
 
-<p><b>LLM</b> University of Edinburgh</p>
-<p><b>LLB (Hons)</b> University of London</p>
-<p><b>CAMS</b> ACAMS</p>
+<h3>Certifications & Education</h3>
+
+<div class="grid">
+
+<div class="card">
+<p><span class="highlight">CAMS</span><br>
+Certified Anti-Money Laundering Specialist</p>
+</div>
+
+<div class="card">
+<p><span class="highlight">Microsoft SQL Certification</span><br>
+Completed</p>
+</div>
+
+<div class="card">
+<p><span class="highlight">LLM</span><br>
+International Banking Law and Finance<br>
+University of Edinburgh</p>
+</div>
+
+<div class="card">
+<p><span class="highlight">Qualified Lawyer</span><br>
+England & Wales + Registered Advocate</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="whyhire">
+
+<h3>Why Hire Me</h3>
+
+<p>
+I am a qualified lawyer, a CAMS-certified AML specialist, and a holder of an LLM in International Banking Law and Finance from the University of Edinburgh.
+That combination was built deliberately: to understand financial crime as a
+<span class="highlight">legal, regulatory, operational, and systemic issue.</span>
+</p>
+
+<p>
+Many professionals come from one direction only — law, finance, audit, or operations.
+I bring exposure across multiple disciplines, allowing me to understand not only what a rule says, but how it should work in practice.
+</p>
+
+<p>
+I specialise in areas where technical depth matters:
+<span class="highlight">transaction monitoring, sanctions screening, alert logic, customer risk assessment, and regulatory expectations.</span>
+</p>
+
+<p>
+I understand the architecture behind CDD, EDD, PEP classification, suspicious reporting thresholds, and governance expectations. I can distinguish between compliance that merely looks adequate and compliance that can withstand scrutiny.
+</p>
+
+<p>
+If you need someone to simply process alerts, there are many options.
+If you need someone who can think critically about why the alerts exist, how systems should improve, and how regulation translates into operations, I am worth speaking to.
+</p>
+
+<p class="small">
+Available for roles in Karachi, remote opportunities, and international engagements.
+</p>
 
 </section>
 
 <section id="contact">
-<h2>Contact</h2>
+
+<h3>Contact</h3>
 
 <p>Email: thenaumansuhail065@gmail.com</p>
-<p>LinkedIn: https://www.linkedin.com/in/noman-sohail-52742b200/</p>
-<p>GitHub: https://github.com/don15065-rgb</p>
+
+<p>
+LinkedIn:
+<a href="https://www.linkedin.com/in/noman-sohail-52742b200/" target="_blank" style="color:#c9a227;">
+linkedin.com/in/noman-sohail-52742b200
+</a>
+</p>
+
+<p>Location: Karachi, Pakistan</p>
+
+<p>Open to Remote & International Opportunities</p>
 
 </section>
 
+</div>
+
 <footer>
-© 2026 Nomi Sohail
+© 2026 Noman Sohail | nomansohail.org
 </footer>
 
 </body>
