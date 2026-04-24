@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nomi | AML Compliance Analyst</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 60px;
+    }
+    .card {
+      background: #1e293b;
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 650px;
+      margin: auto;
+      box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    }
+    h1 { color: #38bdf8; }
+    .tag {
+      display: inline-block;
+      background: #334155;
+      padding: 10px 15px;
+      border-radius: 999px;
+      margin: 6px;
+    }
+    button {
+      margin-top: 25px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      background: #38bdf8;
+      color: #0f172a;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Nomi Sohail</h1>
+    <h2>CAMS Certified | AML / KYC / Compliance</h2>
+
+    <p>
+      I am building my career in anti-money laundering, KYC/CDD,
+      financial crime compliance, and regulatory risk.
+    </p>
+
+    <div>
+      <span class="tag">CAMS</span>
+      <span class="tag">AML</span>
+      <span class="tag">KYC/CDD</span>
+      <span class="tag">Transaction Monitoring</span>
+      <span class="tag">Financial Regulation</span>
+    </div>
+
+    <button onclick="showMessage()">Click me</button>
+
+    <p id="message"></p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerText =
+        "Welcome to Nomi’s first GitHub project — financial crime fighters assemble.";
+    }
+  </script>
+</body>
+</html>
