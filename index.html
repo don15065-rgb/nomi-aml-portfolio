@@ -1,71 +1,199 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nomi | AML Compliance Analyst</title>
+  <title>Nomi Sohail | AML Compliance Portfolio</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background: #0f172a;
-      color: white;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #020617, #1e3a8a);
+      padding: 60px 20px;
       text-align: center;
-      padding: 60px;
     }
-    .card {
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #cbd5e1;
+    }
+
+    nav {
+      background: #020617;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #38bdf8;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 30px auto;
       background: #1e293b;
-      padding: 40px;
-      border-radius: 20px;
-      max-width: 650px;
-      margin: auto;
-      box-shadow: 0 0 30px rgba(0,0,0,0.4);
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.3);
     }
-    h1 { color: #38bdf8; }
+
+    h2 {
+      color: #38bdf8;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 8px;
+    }
+
     .tag {
       display: inline-block;
       background: #334155;
-      padding: 10px 15px;
-      border-radius: 999px;
+      padding: 9px 14px;
       margin: 6px;
+      border-radius: 999px;
     }
-    button {
-      margin-top: 25px;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 10px;
+
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 18px;
       background: #38bdf8;
-      color: #0f172a;
+      color: #020617;
+      text-decoration: none;
+      border-radius: 10px;
       font-weight: bold;
-      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
     }
   </style>
 </head>
+
 <body>
-  <div class="card">
-    <h1>Nomi Sohail</h1>
-    <h2>CAMS Certified | AML / KYC / Compliance</h2>
 
-    <p>
-      I am building my career in anti-money laundering, KYC/CDD,
-      financial crime compliance, and regulatory risk.
-    </p>
+<header>
+  <h1>Nomi Sohail</h1>
+  <p>CAMS Certified | AML / KYC / Compliance | Financial Regulation</p>
+  <a class="button" href="YOUR-LINKEDIN-LINK-HERE" target="_blank">LinkedIn</a>
+  <a class="button" href="YOUR-CV-LINK-HERE" target="_blank">Download CV</a>
+</header>
 
-    <div>
-      <span class="tag">CAMS</span>
-      <span class="tag">AML</span>
-      <span class="tag">KYC/CDD</span>
-      <span class="tag">Transaction Monitoring</span>
-      <span class="tag">Financial Regulation</span>
-    </div>
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <button onclick="showMessage()">Click me</button>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am a CAMS Certified AML professional with an academic background in
+    International Banking Law and Finance. My interests lie in anti-money
+    laundering, KYC/CDD, financial crime compliance, transaction monitoring,
+    sanctions, regulatory risk, and financial regulation.
+  </p>
+  <p>
+    I am currently building my career in AML/KYC/Compliance, with a focus on
+    combining legal reasoning, regulatory understanding, and practical financial
+    crime risk analysis.
+  </p>
+</section>
 
-    <p id="message"></p>
-  </div>
+<section id="skills">
+  <h2>Core Skills</h2>
+  <span class="tag">CAMS</span>
+  <span class="tag">AML/CFT</span>
+  <span class="tag">KYC/CDD</span>
+  <span class="tag">EDD</span>
+  <span class="tag">Transaction Monitoring</span>
+  <span class="tag">Sanctions Screening</span>
+  <span class="tag">FATF Recommendations</span>
+  <span class="tag">SARs/STRs</span>
+  <span class="tag">Financial Regulation</span>
+  <span class="tag">Legal Research</span>
+  <span class="tag">SQL Learning</span>
+</section>
 
-  <script>
-    function showMessage() {
-      document.getElementById("message").innerText =
-        "Welcome to Nomi’s first GitHub project — financial crime fighters assemble.";
-    }
-  </script>
+<section id="education">
+  <h2>Education</h2>
+  <h3>LLM International Banking Law and Finance</h3>
+  <p>University of Edinburgh</p>
+
+  <h3>LLB (Hons)</h3>
+  <p>University of London</p>
+
+  <h3>CAMS Certification</h3>
+  <p>Certified Anti-Money Laundering Specialist</p>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <h3>Legal / Compliance-Oriented Background</h3>
+  <p>
+    Experience in legal research, regulatory analysis, contract review,
+    trademark-related work, and corporate/legal documentation.
+  </p>
+
+  <h3>AML Career Focus</h3>
+  <p>
+    Actively developing practical skills in KYC/CDD, transaction monitoring,
+    suspicious activity indicators, sanctions, customer risk assessment,
+    and financial crime typologies.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <h3>AML Portfolio Website</h3>
+  <p>
+    A personal GitHub Pages website presenting my AML, KYC, compliance,
+    legal, and financial regulation profile.
+  </p>
+
+  <h3>SQL Learning Journey</h3>
+  <p>
+    Learning SQL to understand how data is queried, filtered, and analysed
+    in compliance and transaction-monitoring environments.
+  </p>
+
+  <h3>Financial Regulation Research</h3>
+  <p>
+    Academic research focused on UK financial regulation, regulatory objectives,
+    competitiveness, growth, and post-crisis banking regulation.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: your-email-here</p>
+  <p>LinkedIn: your-linkedin-here</p>
+  <p>GitHub: https://github.com/don15065-rgb</p>
+</section>
+
+<footer>
+  <p>© 2026 Nomi Sohail | Built with GitHub Pages</p>
+</footer>
+
 </body>
 </html>
