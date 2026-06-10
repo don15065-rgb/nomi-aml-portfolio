@@ -1,1159 +1,1124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Noman Sohail | Advocate in Karachi</title>
-  <meta name="description" content="Noman Sohail is an Advocate enrolled with the Sindh Bar Council, based in Karachi. Civil litigation, property disputes, contractual matters, banking and financial law, regulatory matters, and pro bono legal support." />
-  <meta name="keywords" content="Noman Sohail, Advocate Karachi, Lawyer Karachi, Civil Lawyer Karachi, Property Lawyer Karachi, Sindh Bar Council, Litigation, Banking Law, Financial Law, Pro Bono Lawyer Karachi" />
-  <meta name="author" content="Noman Sohail" />
-
-  <meta property="og:title" content="Noman Sohail | Advocate in Karachi" />
-  <meta property="og:description" content="Client-focused legal representation in civil litigation, property disputes, contractual matters, banking and financial law, and regulatory issues." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://nomansohail.org" />
-
-  <style>
-    :root {
-      --bg: #070a12;
-      --bg-2: #0b1020;
-      --card: rgba(255, 255, 255, 0.075);
-      --card-2: rgba(255, 255, 255, 0.105);
-      --text: #f5f7fb;
-      --muted: #aab4c3;
-      --soft: #d8dee9;
-      --gold: #d7a84f;
-      --gold-2: #f2d38b;
-      --cyan: #4cc9f0;
-      --green: #6ee7b7;
-      --red: #ff6b6b;
-      --line: rgba(255, 255, 255, 0.14);
-      --shadow: 0 30px 90px rgba(0, 0, 0, 0.42);
-      --radius: 26px;
-      --max: 1180px;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at 15% 0%, rgba(76, 201, 240, 0.16), transparent 30%),
-        radial-gradient(circle at 85% 10%, rgba(215, 168, 79, 0.2), transparent 34%),
-        radial-gradient(circle at 50% 100%, rgba(110, 231, 183, 0.08), transparent 34%),
-        var(--bg);
-      line-height: 1.65;
-      overflow-x: hidden;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
-      background-size: 46px 46px;
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.85), transparent 78%);
-      z-index: -1;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    .container {
-      width: min(var(--max), calc(100% - 38px));
-      margin: 0 auto;
-    }
-
-    .glass {
-      background: linear-gradient(145deg, rgba(255,255,255,0.11), rgba(255,255,255,0.055));
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(22px);
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(7, 10, 18, 0.78);
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-      backdrop-filter: blur(22px);
-    }
-
-    .nav {
-      min-height: 78px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 13px;
-    }
-
-    .brand-mark {
-      width: 44px;
-      height: 44px;
-      border-radius: 16px;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(135deg, var(--gold), #7c5b20);
-      color: #08111f;
-      font-family: Georgia, "Times New Roman", serif;
-      font-weight: 900;
-      letter-spacing: -0.04em;
-      box-shadow: 0 14px 34px rgba(215, 168, 79, 0.22);
-    }
-
-    .brand-copy strong {
-      display: block;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.18rem;
-      letter-spacing: -0.02em;
-    }
-
-    .brand-copy span {
-      display: block;
-      color: var(--muted);
-      font-size: 0.76rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 22px;
-      color: var(--soft);
-      font-size: 0.92rem;
-    }
-
-    .nav-links a {
-      opacity: 0.86;
-      transition: 0.2s ease;
-    }
-
-    .nav-links a:hover {
-      opacity: 1;
-      color: var(--gold-2);
-    }
-
-    .nav-cta {
-      padding: 10px 16px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--gold), var(--gold-2));
-      color: #0b1020;
-      font-weight: 850;
-      box-shadow: 0 14px 30px rgba(215, 168, 79, 0.2);
-    }
-
-    .hero {
-      position: relative;
-      padding: 96px 0 70px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 52px;
-      align-items: center;
-    }
-
-    .kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 13px;
-      border-radius: 999px;
-      border: 1px solid rgba(215,168,79,0.32);
-      background: rgba(215,168,79,0.095);
-      color: var(--gold-2);
-      font-weight: 850;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-      font-size: 0.74rem;
-      margin-bottom: 22px;
-    }
-
-    .kicker::before {
-      content: "";
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--green);
-      box-shadow: 0 0 0 5px rgba(110,231,183,0.12);
-    }
-
-    h1, h2, h3 {
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.08;
-    }
-
-    h1 {
-      font-size: clamp(3.25rem, 8vw, 6.8rem);
-      letter-spacing: -0.075em;
-      max-width: 760px;
-      margin-bottom: 20px;
-    }
-
-    .gold-text {
-      color: var(--gold-2);
-    }
-
-    .hero-subtitle {
-      font-size: clamp(1.25rem, 2.4vw, 2rem);
-      color: #e7edf7;
-      font-weight: 760;
-      max-width: 760px;
-      margin-bottom: 22px;
-      line-height: 1.28;
-    }
-
-    .hero-text {
-      color: var(--muted);
-      max-width: 740px;
-      font-size: 1.08rem;
-      margin-bottom: 30px;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 13px;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 14px 19px;
-      border-radius: 999px;
-      font-weight: 850;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-3px);
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--gold), var(--gold-2));
-      color: #070a12;
-      box-shadow: 0 18px 42px rgba(215, 168, 79, 0.22);
-    }
-
-    .btn-secondary {
-      background: rgba(255,255,255,0.07);
-      border: 1px solid var(--line);
-      color: white;
-    }
-
-    .trust-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .trust-pill {
-      padding: 9px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.12);
-      background: rgba(255,255,255,0.06);
-      color: var(--soft);
-      font-size: 0.88rem;
-      font-weight: 650;
-    }
-
-    .portrait-card {
-      position: relative;
-      border-radius: 34px;
-      padding: 16px;
-      background:
-        linear-gradient(145deg, rgba(255,255,255,0.16), rgba(255,255,255,0.055));
-      border: 1px solid rgba(255,255,255,0.16);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-
-    .portrait-card::before {
-      content: "";
-      position: absolute;
-      inset: -120px -80px auto auto;
-      width: 260px;
-      height: 260px;
-      background: radial-gradient(circle, rgba(215,168,79,0.42), transparent 67%);
-      pointer-events: none;
-    }
-
-    .portrait-wrap {
-      position: relative;
-      min-height: 560px;
-      border-radius: 26px;
-      overflow: hidden;
-      background: linear-gradient(145deg, #111827, #050812);
-    }
-
-    .portrait-wrap img {
-      width: 100%;
-      height: 560px;
-      object-fit: cover;
-      object-position: center top;
-      filter: contrast(1.03) saturate(1.03);
-    }
-
-    .portrait-overlay {
-      position: absolute;
-      inset: auto 16px 16px 16px;
-      border-radius: 22px;
-      padding: 18px;
-      background: rgba(7, 10, 18, 0.74);
-      border: 1px solid rgba(255,255,255,0.12);
-      backdrop-filter: blur(18px);
-    }
-
-    .portrait-overlay strong {
-      display: block;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.35rem;
-      margin-bottom: 6px;
-    }
-
-    .portrait-overlay p {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    section {
-      padding: 82px 0;
-    }
-
-    .section-head {
-      max-width: 820px;
-      margin-bottom: 34px;
-    }
-
-    .section-label {
-      color: var(--gold-2);
-      font-size: 0.76rem;
-      font-weight: 900;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-
-    h2 {
-      font-size: clamp(2.1rem, 4vw, 3.6rem);
-      letter-spacing: -0.045em;
-      margin-bottom: 14px;
-    }
-
-    .section-head p {
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    .intro-grid {
-      display: grid;
-      grid-template-columns: 1.12fr 0.88fr;
-      gap: 22px;
-    }
-
-    .intro-card {
-      border-radius: var(--radius);
-      padding: 30px;
-    }
-
-    .intro-card p {
-      color: var(--soft);
-      font-size: 1.02rem;
-    }
-
-    .intro-card p + p {
-      margin-top: 16px;
-    }
-
-    .client-promise {
-      border-radius: var(--radius);
-      padding: 30px;
-      background:
-        linear-gradient(145deg, rgba(215,168,79,0.18), rgba(255,255,255,0.07));
-      border: 1px solid rgba(215,168,79,0.25);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .client-promise::after {
-      content: "⚖";
-      position: absolute;
-      right: -18px;
-      bottom: -58px;
-      font-size: 11rem;
-      opacity: 0.07;
-    }
-
-    .client-promise h3 {
-      font-size: 1.65rem;
-      margin-bottom: 12px;
-    }
-
-    .client-promise p {
-      color: var(--soft);
-    }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
-      margin-top: 26px;
-    }
-
-    .stat {
-      border-radius: 22px;
-      padding: 20px;
-      background: rgba(255,255,255,0.065);
-      border: 1px solid rgba(255,255,255,0.11);
-    }
-
-    .stat strong {
-      display: block;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.65rem;
-      color: var(--gold-2);
-      margin-bottom: 4px;
-    }
-
-    .stat span {
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .service-card {
-      position: relative;
-      min-height: 260px;
-      border-radius: var(--radius);
-      padding: 26px;
-      overflow: hidden;
-      background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.045));
-      border: 1px solid rgba(255,255,255,0.12);
-      transition: transform 0.22s ease, border 0.22s ease, background 0.22s ease;
-    }
-
-    .service-card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(215,168,79,0.42);
-      background: linear-gradient(145deg, rgba(215,168,79,0.13), rgba(255,255,255,0.06));
-    }
-
-    .service-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-      background: rgba(215,168,79,0.13);
-      border: 1px solid rgba(215,168,79,0.25);
-      color: var(--gold-2);
-      font-size: 1.35rem;
-      margin-bottom: 20px;
-    }
-
-    .service-card h3 {
-      font-size: 1.42rem;
-      margin-bottom: 12px;
-    }
-
-    .service-card p {
-      color: var(--muted);
-      font-size: 0.97rem;
-    }
-
-    .service-card .mini {
-      margin-top: 18px;
-      color: var(--soft);
-      font-size: 0.88rem;
-      font-weight: 800;
-    }
-
-    .research-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
-
-    .research-card {
-      position: relative;
-      min-height: 230px;
-      border-radius: var(--radius);
-      padding: 26px;
-      background: linear-gradient(145deg, rgba(255,255,255,0.1), rgba(255,255,255,0.045));
-      border: 1px solid rgba(255,255,255,0.12);
-      overflow: hidden;
-      transition: transform 0.22s ease, border 0.22s ease, background 0.22s ease;
-    }
-
-    .research-card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(76,201,240,0.38);
-      background: linear-gradient(145deg, rgba(76,201,240,0.11), rgba(255,255,255,0.055));
-    }
-
-    .research-card::after {
-      content: "";
-      position: absolute;
-      width: 170px;
-      height: 170px;
-      right: -70px;
-      bottom: -80px;
-      background: radial-gradient(circle, rgba(215,168,79,0.22), transparent 68%);
-      pointer-events: none;
-    }
-
-    .research-tag {
-      display: inline-flex;
-      width: fit-content;
-      padding: 7px 11px;
-      border-radius: 999px;
-      background: rgba(76,201,240,0.11);
-      border: 1px solid rgba(76,201,240,0.22);
-      color: #b7ecff;
-      font-size: 0.76rem;
-      font-weight: 900;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      margin-bottom: 16px;
-    }
-
-    .research-card h3 {
-      font-size: 1.38rem;
-      margin-bottom: 12px;
-    }
-
-    .research-card p {
-      color: var(--muted);
-      font-size: 0.97rem;
-    }
-
-    .research-note {
-      margin-top: 18px;
-      padding: 20px;
-      border-radius: 22px;
-      background: rgba(215,168,79,0.09);
-      border: 1px solid rgba(215,168,79,0.18);
-      color: var(--soft);
-    }
-
-    .probono-box {
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 30px;
-      align-items: center;
-      border-radius: 34px;
-      padding: 38px;
-      background:
-        linear-gradient(135deg, rgba(110,231,183,0.16), rgba(76,201,240,0.09)),
-        linear-gradient(145deg, rgba(255,255,255,0.11), rgba(255,255,255,0.05));
-      border: 1px solid rgba(110,231,183,0.25);
-      box-shadow: var(--shadow);
-    }
-
-    .probono-badge {
-      width: 130px;
-      height: 130px;
-      border-radius: 38px;
-      display: grid;
-      place-items: center;
-      background: rgba(110,231,183,0.12);
-      border: 1px solid rgba(110,231,183,0.3);
-      color: var(--green);
-      font-size: 3.4rem;
-      margin-bottom: 20px;
-    }
-
-    .probono-box h2 {
-      margin-bottom: 12px;
-    }
-
-    .probono-box p {
-      color: var(--soft);
-    }
-
-    .probono-list {
-      display: grid;
-      gap: 12px;
-    }
-
-    .probono-list div {
-      padding: 14px 16px;
-      border-radius: 18px;
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.1);
-      color: var(--soft);
-    }
-
-    .credentials-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-    }
-
-    .credential {
-      border-radius: 24px;
-      padding: 24px;
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.11);
-      min-height: 210px;
-    }
-
-    .credential span {
-      display: inline-block;
-      color: var(--gold-2);
-      font-size: 0.74rem;
-      font-weight: 950;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-
-    .credential h3 {
-      font-size: 1.28rem;
-      margin-bottom: 10px;
-    }
-
-    .credential p {
-      color: var(--muted);
-      font-size: 0.93rem;
-    }
-
-    .contact-section {
-      padding: 86px 0;
-      background:
-        radial-gradient(circle at 80% 20%, rgba(215,168,79,0.2), transparent 30%),
-        rgba(255,255,255,0.035);
-      border-top: 1px solid rgba(255,255,255,0.09);
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 0.9fr;
-      gap: 24px;
-      align-items: stretch;
-    }
-
-    .contact-panel {
-      border-radius: 34px;
-      padding: 34px;
-    }
-
-    .contact-panel h2 {
-      margin-bottom: 14px;
-    }
-
-    .contact-panel p {
-      color: var(--muted);
-      max-width: 680px;
-      margin-bottom: 24px;
-    }
-
-    .contact-actions {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .contact-card {
-      border-radius: 34px;
-      padding: 26px;
-      display: grid;
-      gap: 12px;
-    }
-
-    .contact-link,
-    .contact-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 15px 16px;
-      border-radius: 18px;
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.11);
-      color: white;
-      font-weight: 760;
-      word-break: break-word;
-    }
-
-    .contact-link span,
-    .contact-item span {
-      color: var(--muted);
-      font-weight: 650;
-      font-size: 0.88rem;
-      white-space: nowrap;
-    }
-
-    footer {
-      padding: 24px 0;
-      color: var(--muted);
-      background: rgba(0,0,0,0.18);
-      border-top: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      gap: 18px;
-      flex-wrap: wrap;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 980px) {
-      .nav-links {
-        display: none;
-      }
-
-      .hero-grid,
-      .intro-grid,
-      .probono-box,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .services-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .research-grid,
-      .credentials-grid,
-      .stats {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .portrait-wrap,
-      .portrait-wrap img {
-        height: 520px;
-        min-height: 520px;
-      }
-    }
-
-    @media (max-width: 760px) {
-      .brand-copy span {
-        letter-spacing: 0.09em;
-      }
-
-      .hero-actions,
-      .contact-actions {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .btn {
-        width: 100%;
-      }
-
-      .trust-pill {
-        width: 100%;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .container {
-        width: min(100% - 28px, var(--max));
-      }
-
-      .hero {
-        padding: 70px 0 50px;
-      }
-
-      h1 {
-        font-size: clamp(2.75rem, 14vw, 3.35rem);
-        letter-spacing: -0.06em;
-      }
-
-      .hero-subtitle {
-        font-size: 1.15rem;
-      }
-
-      .hero-text,
-      .section-head p,
-      .intro-card p,
-      .client-promise p,
-      .probono-box p,
-      .contact-panel p {
-        font-size: 0.98rem;
-      }
-
-      section {
-        padding: 62px 0;
-      }
-
-      .services-grid,
-      .research-grid,
-      .credentials-grid,
-      .stats {
-        grid-template-columns: 1fr;
-      }
-
-      .portrait-wrap,
-      .portrait-wrap img {
-        height: 460px;
-        min-height: 460px;
-      }
-
-      .intro-card,
-      .client-promise,
-      .probono-box,
-      .contact-panel,
-      .contact-card {
-        padding: 24px;
-      }
-
-      .contact-link,
-      .contact-item {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noman Sohail | Advocate, Sindh Bar Council | Civil &amp; Banking Litigation, Karachi</title>
+<meta name="description" content="Noman Sohail is an Advocate enrolled with the Sindh Bar Council, based in Karachi. Civil litigation, property disputes, contracts, legal notices and drafting, banking and financial law, regulatory matters and selected pro bono work. LLM (Edinburgh), LLB (London), CAMS.">
+<meta name="author" content="Noman Sohail">
+<meta name="keywords" content="Noman Sohail, Advocate Karachi, Lawyer Karachi, Civil Lawyer Karachi, Property Lawyer Karachi, civil litigation Karachi, banking court lawyer, financial regulation, Sindh Bar Council, Pakistani court hierarchy, pro bono lawyer Karachi">
+<link rel="canonical" href="https://nomansohail.org/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nomansohail.org/">
+<meta property="og:title" content="Noman Sohail | Advocate · Civil Litigation · Financial Regulation">
+<meta property="og:description" content="Advocate, Sindh Bar Council. Civil and banking litigation in Karachi. Research in financial regulation and public law. Explore an interactive map of the Pakistani court system.">
+<meta property="og:image" content="https://nomansohail.org/1776953978502.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#06090d">
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;rect width='100' height='100' rx='20' fill='%2306090d'/&gt;&lt;text x='50' y='68' font-size='52' text-anchor='middle' fill='%2367e8f9' font-family='Georgia,serif'&gt;NS&lt;/text&gt;&lt;/svg&gt;">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Noman Sohail",
+  "url": "https://nomansohail.org/",
+  "image": "https://nomansohail.org/1776953978502.png",
+  "jobTitle": "Advocate",
+  "memberOf": { "@type": "Organization", "name": "Sindh Bar Council" },
+  "telephone": "+92-348-3996102",
+  "email": "mailto:thenaumansuhail065@gmail.com",
+  "sameAs": ["https://www.linkedin.com/in/noman-sohail-52742b200/"],
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "University of Edinburgh" },
+    { "@type": "CollegeOrUniversity", "name": "University of London" }
+  ],
+  "knowsAbout": ["Civil litigation", "Banking law", "Financial regulation", "Constitutional law", "Pakistani court system"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Karachi", "addressRegion": "Sindh", "addressCountry": "PK" }
+}
+</script>
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --bg:#06090d;
+  --bg-raise:#0a0f15;
+  --glass:rgba(255,255,255,.035);
+  --glass-strong:rgba(255,255,255,.06);
+  --line:rgba(255,255,255,.09);
+  --line-soft:rgba(255,255,255,.055);
+  --text:#e8edf2;
+  --text-dim:#9aa7b4;
+  --text-faint:#5d6b79;
+  --accent:#67e8f9;
+  --accent-deep:#22d3ee;
+  --accent-ink:#04282e;
+  --gold:#f1c45f;
+  --rose:#fb7185;
+  --violet:#a78bfa;
+  --emerald:#34d399;
+  --serif:"Fraunces",Georgia,serif;
+  --sans:"Inter",system-ui,-apple-system,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+  --r-lg:18px; --r-md:13px; --r-sm:9px;
+  --maxw:1140px;
+  --gutter:clamp(18px,4vw,40px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
+}
+body{
+  font-family:var(--sans);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+/* dot grid backdrop */
+body::before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background-image:radial-gradient(rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:26px 26px;
+  mask-image:linear-gradient(to bottom,rgba(0,0,0,.9),rgba(0,0,0,.35) 60%,rgba(0,0,0,.55));
+  -webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,.9),rgba(0,0,0,.35) 60%,rgba(0,0,0,.55));
+}
+::selection{background:rgba(34,211,238,.28);color:#fff}
+a{color:var(--accent);text-decoration:none}
+img{max-width:100%;display:block}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent-deep);outline-offset:3px;border-radius:4px}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
+section{padding:clamp(72px,10vw,120px) 0;scroll-margin-top:84px}
+
+/* ============ TYPE UTILITIES ============ */
+.eyebrow{
+  font-family:var(--mono);font-size:.72rem;font-weight:500;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--accent-deep);display:flex;align-items:center;gap:.8rem;margin-bottom:1.1rem;
+}
+.eyebrow::after{content:"";height:1px;width:54px;background:linear-gradient(90deg,var(--accent-deep),transparent)}
+h2.sec-title{font-size:clamp(1.7rem,3.6vw,2.45rem);font-weight:700;letter-spacing:-.02em;line-height:1.18;margin-bottom:.85rem}
+.sec-lead{color:var(--text-dim);max-width:62ch;font-size:1.02rem}
+.mono{font-family:var(--mono)}
+
+/* ============ NAV ============ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:60;
+  background:rgba(6,9,13,.66);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);
+  border-bottom:1px solid var(--line-soft);
+}
+.nav-in{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter);height:64px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{display:flex;align-items:baseline;gap:.55rem;color:var(--text);font-weight:600;letter-spacing:-.01em}
+.brand .b-name{font-family:var(--serif);font-size:1.12rem}
+.brand .b-tag{font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;color:var(--text-faint);text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:1.6rem;list-style:none}
+.nav-links a{color:var(--text-dim);font-size:.9rem;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--text)}
+.nav-cta{
+  font-size:.84rem;font-weight:600;padding:.5rem 1rem;border-radius:99px;
+  background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.35);color:var(--accent)!important;
+  transition:background .2s,border-color .2s;
+}
+.nav-cta:hover{background:rgba(34,211,238,.2);border-color:rgba(34,211,238,.6)}
+.nav-burger{display:none;background:none;border:1px solid var(--line);border-radius:8px;width:40px;height:40px;color:var(--text);align-items:center;justify-content:center}
+@media(max-width:880px){
+  .nav-links{
+    position:fixed;top:64px;right:0;left:0;flex-direction:column;align-items:stretch;gap:0;
+    background:rgba(7,10,15,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+    border-bottom:1px solid var(--line);padding:.5rem 0 1rem;display:none;
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{padding:.85rem var(--gutter);border-bottom:1px solid var(--line-soft)}
+  .nav-cta{margin:1rem var(--gutter) 0;text-align:center}
+  .nav-burger{display:flex}
+}
+
+/* ============ BUTTONS ============ */
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:600;font-size:.93rem;border-radius:11px;padding:.78rem 1.45rem;transition:transform .2s,box-shadow .2s,background .2s,border-color .2s;border:1px solid transparent}
+.btn svg{width:17px;height:17px;flex:none}
+.btn-primary{background:linear-gradient(180deg,#3ddbee,#16b3cf);color:#03222a;box-shadow:0 0 0 1px rgba(103,232,249,.25),0 10px 32px -10px rgba(34,211,238,.45)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(103,232,249,.4),0 16px 40px -10px rgba(34,211,238,.6)}
+.btn-ghost{background:var(--glass);border-color:var(--line);color:var(--text)}
+.btn-ghost:hover{background:var(--glass-strong);border-color:rgba(255,255,255,.18);transform:translateY(-2px)}
+
+/* ============ HERO ============ */
+.hero{position:relative;padding:158px 0 96px;overflow:hidden}
+.hero-glow{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.hero-glow::before,.hero-glow::after{content:"";position:absolute;border-radius:50%;filter:blur(90px)}
+.hero-glow::before{width:560px;height:560px;top:-220px;left:-140px;background:radial-gradient(circle,rgba(34,211,238,.16),transparent 65%)}
+.hero-glow::after{width:520px;height:520px;top:60px;right:-180px;background:radial-gradient(circle,rgba(99,102,241,.13),transparent 65%)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.hero-kicker{font-family:var(--mono);font-size:.74rem;letter-spacing:.26em;color:var(--text-dim);text-transform:uppercase;display:inline-flex;align-items:center;gap:.6rem;border:1px solid var(--line);border-radius:99px;padding:.45rem .95rem;background:var(--glass);margin-bottom:1.6rem}
+.hero-kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--accent-deep);box-shadow:0 0 10px var(--accent-deep);animation:pulse 2.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.7rem,6.4vw,4.6rem);line-height:1.04;letter-spacing:-.018em;margin-bottom:1.15rem}
+.hero h1 .hl{background:linear-gradient(100deg,#9beff9 10%,#22d3ee 55%,#67a6f9 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-tagline{font-family:var(--mono);font-size:clamp(.86rem,1.6vw,1rem);color:var(--accent);letter-spacing:.06em;margin-bottom:1.35rem}
+.hero-tagline span{color:var(--text-faint);padding:0 .45rem}
+.hero-sub{color:var(--text-dim);font-size:1.04rem;max-width:56ch;margin-bottom:2.1rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.85rem;margin-bottom:2.2rem}
+.cred-row{display:flex;flex-wrap:wrap;gap:.55rem}
+.cred{font-family:var(--mono);font-size:.7rem;letter-spacing:.05em;color:var(--text-dim);border:1px solid var(--line);background:var(--glass);border-radius:99px;padding:.38rem .8rem}
+.cred b{color:var(--text);font-weight:600}
+/* portrait card */
+.portrait{position:relative;border-radius:var(--r-lg);padding:10px;background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.02));border:1px solid var(--line);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);max-width:380px;justify-self:end;width:100%}
+.portrait::before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:linear-gradient(160deg,rgba(103,232,249,.5),transparent 35%,transparent 70%,rgba(99,102,241,.4));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.portrait img{border-radius:calc(var(--r-lg) - 6px);width:100%;aspect-ratio:4/4.6;object-fit:cover;filter:saturate(.96) contrast(1.03)}
+.portrait-cap{display:flex;justify-content:space-between;align-items:center;padding:.75rem .35rem .25rem;font-family:var(--mono);font-size:.66rem;letter-spacing:.16em;color:var(--text-faint);text-transform:uppercase}
+.portrait-cap b{color:var(--text-dim);font-weight:500}
+@media(max-width:880px){
+  .hero{padding:128px 0 72px}
+  .hero-grid{grid-template-columns:1fr}
+  .portrait{justify-self:start;max-width:320px;order:-1}
+}
+
+/* ============ GENERIC GLASS CARD ============ */
+.card{background:var(--glass);border:1px solid var(--line);border-radius:var(--r-lg);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+
+/* ============ COURT MAP ============ */
+.map-shell{position:relative;margin-top:2.6rem}
+.route-bar{display:flex;flex-wrap:wrap;gap:.55rem;margin:1.9rem 0 .4rem}
+.route-btn{
+  display:inline-flex;align-items:center;gap:.5rem;font-family:var(--mono);font-size:.74rem;letter-spacing:.04em;
+  color:var(--text-dim);background:var(--glass);border:1px solid var(--line);border-radius:99px;padding:.5rem 1rem;
+  transition:all .2s;
+}
+.route-btn .swatch{width:9px;height:9px;border-radius:50%;background:var(--sw,#67e8f9);box-shadow:0 0 8px var(--sw,#67e8f9)}
+.route-btn:hover{color:var(--text);border-color:rgba(255,255,255,.22)}
+.route-btn.active{color:var(--text);background:rgba(255,255,255,.07);border-color:var(--sw);box-shadow:0 0 0 1px var(--sw) inset,0 0 22px -8px var(--sw)}
+.route-btn.clear-btn .swatch{display:none}
+.route-summary{
+  display:none;margin:.9rem 0 1.4rem;padding:.95rem 1.15rem;border-radius:var(--r-md);
+  background:var(--glass);border:1px solid var(--line);font-size:.88rem;color:var(--text-dim);
+}
+.route-summary.show{display:block}
+.route-summary .rs-title{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--rs,#67e8f9);margin-bottom:.45rem}
+.route-summary .rs-chain{display:flex;flex-wrap:wrap;gap:.4rem .6rem;align-items:center;font-size:.84rem}
+.route-summary .rs-chain .step{color:var(--text);background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:7px;padding:.2rem .6rem}
+.route-summary .rs-chain .arr{color:var(--rs,#67e8f9);font-family:var(--mono)}
+.route-summary .rs-note{margin-top:.55rem;font-size:.8rem;color:var(--text-faint)}
+
+.map-wrap{position:relative;padding-left:clamp(26px,4vw,46px)}
+#route-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible;z-index:1}
+#route-svg path{fill:none;stroke-width:2.4;stroke-linecap:round;stroke-dasharray:7 8;animation:dashflow 1.6s linear infinite;filter:drop-shadow(0 0 6px currentColor)}
+#route-svg circle{filter:drop-shadow(0 0 6px currentColor)}
+@keyframes dashflow{to{stroke-dashoffset:-30}}
+
+.tier{margin-bottom:2.7rem;position:relative;z-index:2}
+.tier-head{display:flex;align-items:center;gap:1rem;margin-bottom:1.05rem}
+.tier-head .t-label{font-family:var(--mono);font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--text-faint);white-space:nowrap}
+.tier-head .t-line{flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.tier-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr));gap:.9rem}
+
+.node{
+  background:var(--glass);border:1px solid var(--line);border-radius:var(--r-md);
+  transition:border-color .25s,box-shadow .25s,opacity .3s,background .25s;position:relative;
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+}
+.node:hover{border-color:rgba(255,255,255,.2)}
+.node.dim{opacity:.28}
+.node.lit{border-color:var(--nc,#67e8f9);box-shadow:0 0 0 1px var(--nc,#67e8f9) inset,0 0 30px -10px var(--nc,#67e8f9);opacity:1}
+.node.focus-node{background:linear-gradient(160deg,rgba(241,196,95,.07),var(--glass))}
+.node-head{display:flex;align-items:flex-start;gap:.8rem;padding:1rem 1.05rem;width:100%;background:none;border:none;color:inherit;text-align:left}
+.node-ico{flex:none;width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--accent)}
+.node-ico svg{width:18px;height:18px}
+.node.focus-node .node-ico{color:var(--gold);border-color:rgba(241,196,95,.35)}
+.node-meta{flex:1;min-width:0}
+.node-name{font-weight:600;font-size:.98rem;letter-spacing:-.01em;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.focus-chip{font-family:var(--mono);font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(241,196,95,.4);border-radius:99px;padding:.14rem .5rem;background:rgba(241,196,95,.08)}
+.node-statute{font-family:var(--mono);font-size:.68rem;color:var(--text-faint);margin-top:.22rem;letter-spacing:.02em}
+.node-chev{flex:none;color:var(--text-faint);transition:transform .3s;margin-top:.35rem}
+.node-chev svg{width:15px;height:15px}
+.node.open .node-chev{transform:rotate(180deg)}
+.step-badge{
+  position:absolute;top:-9px;left:-9px;width:24px;height:24px;border-radius:50%;
+  background:var(--nc,#67e8f9);color:#04141a;font-family:var(--mono);font-weight:600;font-size:.72rem;
+  display:flex;align-items:center;justify-content:center;box-shadow:0 0 14px var(--nc,#67e8f9);z-index:3;
+}
+.node-body{max-height:0;overflow:hidden;transition:max-height .45s ease}
+.node.open .node-body{max-height:560px}
+.node-body-in{padding:.15rem 1.05rem 1.15rem;border-top:1px dashed var(--line-soft);margin:0 0;font-size:.86rem;color:var(--text-dim)}
+.node-body-in ul{list-style:none;margin:.8rem 0 .9rem;display:grid;gap:.45rem}
+.node-body-in li{padding-left:1.1rem;position:relative}
+.node-body-in li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--accent-deep)}
+.node.focus-node .node-body-in li::before{background:var(--gold)}
+.appeal-line{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem;font-size:.78rem}
+.appeal-line .al-label{font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-faint)}
+.appeal-line .al-chip{font-family:var(--mono);font-size:.72rem;color:var(--accent);background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.3);border-radius:7px;padding:.18rem .55rem}
+.map-note{margin-top:.4rem;font-size:.78rem;color:var(--text-faint);font-family:var(--mono)}
+
+/* ============ SERVICES / RESEARCH ============ */
+.r-ico{width:40px;height:40px;border-radius:10px;background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.25);color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
+.r-ico svg{width:19px;height:19px}
+.chip-row{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1rem}
+.chip-row span{font-family:var(--mono);font-size:.63rem;letter-spacing:.08em;color:var(--text-faint);border:1px solid var(--line);border-radius:99px;padding:.2rem .55rem}
+.bridge{margin-top:1.8rem;color:var(--text-dim);font-size:.95rem;max-width:68ch;border-left:2px solid var(--accent-deep);padding-left:1.1rem}
+.expect{margin-top:1.5rem;padding:1.15rem 1.3rem;border-left:2px solid var(--accent-deep);background:var(--glass);border-radius:0 var(--r-md) var(--r-md) 0;font-size:.94rem;color:var(--text-dim)}
+.expect b{color:var(--text);font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;display:block;margin-bottom:.45rem;color:var(--accent-deep)}
+/* ============ RESEARCH ============ */
+.research-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(310px,100%),1fr));gap:1rem;margin-top:2.4rem}
+.r-card{padding:1.5rem 1.45rem;border-radius:var(--r-lg);background:var(--glass);border:1px solid var(--line);transition:transform .25s,border-color .25s,background .25s;position:relative;overflow:hidden}
+.r-card::after{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(103,232,249,.5),transparent);opacity:0;transition:opacity .3s}
+.r-card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.18);background:var(--glass-strong)}
+.r-card:hover::after{opacity:1}
+.r-tag{font-family:var(--mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-deep);margin-bottom:.85rem;display:block}
+.r-card h3{font-size:1.06rem;font-weight:600;letter-spacing:-.01em;margin-bottom:.55rem}
+.r-card p{font-size:.88rem;color:var(--text-dim)}
+
+/* ============ ABOUT ============ */
+.about-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(2rem,5vw,4rem);align-items:start;margin-top:2.2rem}
+.about-copy p{color:var(--text-dim);margin-bottom:1.1rem;font-size:.99rem}
+.about-copy p b,.about-copy p strong{color:var(--text);font-weight:600}
+.cred-panel{padding:1.5rem 1.45rem}
+.cred-panel h3{font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--text-faint);margin-bottom:1.1rem}
+.cred-list{list-style:none;display:grid;gap:.95rem}
+.cred-list li{display:flex;gap:.85rem;align-items:flex-start}
+.cred-list .ci{flex:none;width:34px;height:34px;border-radius:9px;background:rgba(34,211,238,.08);border:1px solid rgba(34,211,238,.25);color:var(--accent);display:flex;align-items:center;justify-content:center}
+.cred-list .ci svg{width:16px;height:16px}
+.cred-list b{display:block;font-size:.92rem;font-weight:600;letter-spacing:-.01em}
+.cred-list span{font-size:.8rem;color:var(--text-faint);font-family:var(--mono)}
+@media(max-width:880px){.about-grid{grid-template-columns:1fr}}
+
+/* ============ PRO BONO ============ */
+.probono-panel{
+  margin-top:2.3rem;border-radius:var(--r-lg);border:1px solid rgba(52,211,153,.25);
+  background:linear-gradient(160deg,rgba(52,211,153,.06),rgba(255,255,255,.02));
+  padding:clamp(1.6rem,4vw,2.6rem);position:relative;overflow:hidden;
+}
+.probono-panel::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;top:-220px;right:-160px;background:radial-gradient(circle,rgba(52,211,153,.14),transparent 65%);filter:blur(50px);pointer-events:none}
+.pb-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(1.8rem,4vw,3rem);position:relative}
+.pb-grid p{color:var(--text-dim);font-size:.97rem;margin-bottom:1rem}
+.pb-list{list-style:none;display:grid;gap:.7rem;margin-top:.4rem}
+.pb-list li{display:flex;gap:.7rem;align-items:flex-start;font-size:.9rem;color:var(--text-dim)}
+.pb-list svg{flex:none;width:17px;height:17px;color:var(--emerald);margin-top:.18rem}
+.pb-foot{margin-top:1.6rem;display:flex;flex-wrap:wrap;gap:.85rem;align-items:center}
+.pb-caveat{font-family:var(--mono);font-size:.72rem;color:var(--text-faint)}
+.btn-emerald{background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.4);color:#a7f3d0}
+.btn-emerald:hover{background:rgba(52,211,153,.2);transform:translateY(-2px)}
+@media(max-width:880px){.pb-grid{grid-template-columns:1fr}}
+
+/* ============ CONTACT ============ */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:.9rem;margin-top:2.3rem}
+.c-card{padding:1.35rem 1.3rem;border-radius:var(--r-lg);background:var(--glass);border:1px solid var(--line);display:flex;flex-direction:column;gap:.7rem;color:var(--text);transition:transform .25s,border-color .25s,background .25s}
+a.c-card:hover{transform:translateY(-4px);border-color:rgba(103,232,249,.4);background:var(--glass-strong)}
+.c-ico{width:38px;height:38px;border-radius:10px;background:rgba(34,211,238,.09);border:1px solid rgba(34,211,238,.28);color:var(--accent);display:flex;align-items:center;justify-content:center}
+.c-ico svg{width:18px;height:18px}
+.c-card b{font-size:.95rem;font-weight:600}
+.c-card span{font-size:.82rem;color:var(--text-dim);word-break:break-all;font-family:var(--mono)}
+.consult-strip{
+  margin-top:2.4rem;border-radius:var(--r-lg);border:1px solid var(--line);
+  background:linear-gradient(120deg,rgba(34,211,238,.08),rgba(99,102,241,.06));
+  padding:clamp(1.6rem,4vw,2.4rem);display:flex;flex-wrap:wrap;gap:1.4rem;align-items:center;justify-content:space-between;
+}
+.consult-strip h3{font-family:var(--serif);font-size:clamp(1.25rem,2.6vw,1.65rem);font-weight:600;letter-spacing:-.01em;margin-bottom:.3rem}
+.consult-strip p{color:var(--text-dim);font-size:.92rem;max-width:48ch}
+
+/* ============ FOOTER ============ */
+footer{border-top:1px solid var(--line-soft);padding:2.6rem 0 3rem;margin-top:1rem}
+.foot-in{display:flex;flex-wrap:wrap;gap:1.4rem;justify-content:space-between;align-items:flex-start}
+.foot-in .f-brand{font-family:var(--serif);font-size:1.05rem;font-weight:600}
+.foot-in .f-sub{font-family:var(--mono);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--text-faint);margin-top:.3rem}
+.f-links{display:flex;gap:1.3rem;font-size:.85rem}
+.f-links a{color:var(--text-dim)}
+.f-links a:hover{color:var(--text)}
+.disclaimer{margin-top:1.8rem;font-size:.74rem;color:var(--text-faint);max-width:78ch;line-height:1.7}
+
+/* ============ REVEAL ============ */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <a class="brand" href="#top" aria-label="Noman Sohail home">
-        <div class="brand-mark">NS</div>
-        <div class="brand-copy">
-          <strong>Noman Sohail</strong>
-          <span>Advocate · Karachi</span>
-        </div>
-      </a>
 
-      <nav class="nav-links" aria-label="Primary navigation">
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-in">
+    <a href="#top" class="brand">
+      <span class="b-name">Noman Sohail</span>
+      <span class="b-tag">Advocate</span>
+    </a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#court-map">Court Map</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#pro-bono">Pro Bono</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-cta" href="mailto:thenaumansuhail065@gmail.com?subject=Consultation%20Request&body=Assalam-o-Alaikum%20Mr.%20Sohail%2C%0A%0AI%20would%20like%20to%20book%20a%20consultation.%0A%0ANature%20of%20matter%3A%20%0ACity%2Flocation%20of%20the%20matter%3A%20%0ADocuments%20available%3A%20%0ADeadline%20(if%20any)%3A%20%0APreferred%20date%2Ftime%3A%20%0AContact%20number%3A%20">Book a consultation</a></li>
+      </ul>
+    </nav>
+    <button class="nav-burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Introduction">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="hero-kicker"><span class="dot" aria-hidden="true"></span>Sindh Bar Council &middot; Karachi</span>
+      <h1>Noman <span class="hl">Sohail</span></h1>
+      <p class="hero-tagline">Advocate<span>/</span>Civil Litigation<span>/</span>Financial Regulation</p>
+      <p class="hero-sub">I appear in the courts of Karachi in civil and property matters, and work at the intersection of banking law, financial regulation and public law. Trained in the UK, practising in Pakistan, and quietly convinced that the law works better when it is explained clearly.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="mailto:thenaumansuhail065@gmail.com?subject=Consultation%20Request&body=Assalam-o-Alaikum%20Mr.%20Sohail%2C%0A%0AI%20would%20like%20to%20book%20a%20consultation.%0A%0ANature%20of%20matter%3A%20%0ACity%2Flocation%20of%20the%20matter%3A%20%0ADocuments%20available%3A%20%0ADeadline%20(if%20any)%3A%20%0APreferred%20date%2Ftime%3A%20%0AContact%20number%3A%20">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M3 7h18v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/><path d="M3 11h18"/></svg>
+          Book a consultation
+        </a>
+        <a class="btn btn-ghost" href="Noman_Sohail_Resume%20(1).pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
+          Download CV
+        </a>
+      </div>
+      <div class="cred-row" role="list">
+        <span class="cred" role="listitem"><b>LLM</b> Banking Law &amp; Finance &middot; Edinburgh</span>
+        <span class="cred" role="listitem"><b>LLB</b> University of London</span>
+        <span class="cred" role="listitem"><b>CAMS</b> Certified</span>
+      </div>
+    </div>
+    <figure class="portrait">
+      <img src="1776953978502.png" alt="Portrait of Noman Sohail, Advocate" width="380" height="437">
+      <figcaption class="portrait-cap"><b>Noman Sohail</b><span>ADV &middot; KHI</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services">
+  <div class="wrap">
+    <span class="eyebrow reveal">01 &middot; Legal Services</span>
+    <h2 class="sec-title reveal">Civil litigation and legal support for individuals, families and businesses</h2>
+    <p class="sec-lead reveal">Litigation is not only about filing a case. It is about understanding the documents, identifying the legal right, choosing the correct remedy and taking procedural steps at the right time. That is the work, and these are the matters I take.</p>
+    <div class="research-grid">
+      <article class="r-card reveal">
+        <span class="r-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M7 20h10M12 6L6 8m6-2l6 2M6 8l-2.5 5a3 3 0 005 0L6 8zm12 0l-2.5 5a3 3 0 005 0L18 8z"/></svg></span>
+        <h3>Civil Litigation</h3>
+        <p>Suits for declaration, injunctions, civil claims, applications, pleadings, objections and procedural steps before the courts at Karachi.</p>
+        <div class="chip-row"><span>Suits</span><span>Applications</span><span>Injunctions</span></div>
+      </article>
+      <article class="r-card reveal">
+        <span class="r-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7M5 9v11h14V9M10 20v-6h4v6"/></svg></span>
+        <h3>Property Disputes</h3>
+        <p>Title, possession, sale agreements, allotment issues, mutation and revenue record problems, and property documentation disputes.</p>
+        <div class="chip-row"><span>Title</span><span>Possession</span><span>Records</span></div>
+      </article>
+      <article class="r-card reveal">
+        <span class="r-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 3.5a2.1 2.1 0 013 3L8 18l-4 1 1-4L16.5 3.5z"/><path d="M14 6l3 3"/></svg></span>
+        <h3>Legal Notices &amp; Drafting</h3>
+        <p>Legal notices and replies, plaints, written statements, affidavits and document-based legal correspondence, drafted with care.</p>
+        <div class="chip-row"><span>Notices</span><span>Replies</span><span>Pleadings</span></div>
+      </article>
+      <article class="r-card reveal">
+        <span class="r-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h8l4 4v14H7a2 2 0 01-2-2V5a2 2 0 012-2z"/><path d="M15 3v4h4M9 12h7M9 16h7"/></svg></span>
+        <h3>Contracts &amp; Documentation</h3>
+        <p>Review and drafting of agreements, undertakings, settlement terms and legally sensitive documents, with the risks spelt out plainly.</p>
+        <div class="chip-row"><span>Agreements</span><span>Review</span><span>Risk</span></div>
+      </article>
+      <article class="r-card reveal">
+        <span class="r-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 10h16M12 3L4 9h16L12 3zM6 10v8M12 10v8M18 10v8"/></svg></span>
+        <h3>Banking &amp; Financial Matters</h3>
+        <p>Bank-customer disputes, recovery matters under the FIO Ordinance 2001, compliance concerns and financial regulatory questions, informed by specialist training.</p>
+        <div class="chip-row"><span>Banks</span><span>Recovery</span><span>Regulation</span></div>
+      </article>
+      <article class="r-card reveal">
+        <span class="r-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.5 7.8-8 9-4.5-1.2-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <h3>Public &amp; Regulatory Issues</h3>
+        <p>Matters involving public authorities and administrative action, including rights-based remedies and the writ jurisdiction under Article 199.</p>
+        <div class="chip-row"><span>Authorities</span><span>Remedies</span><span>Rights</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COURT MAP ============ -->
+<section id="court-map">
+  <div class="wrap">
+    <span class="eyebrow reveal">02 &middot; The System, Mapped</span>
+    <h2 class="sec-title reveal">The Pakistani court hierarchy</h2>
+    <p class="sec-lead reveal">Every case travels a route. This map sets out the courts, tribunals and forums of Pakistan with a Sindh focus: who hears what, under which statute, and where the appeal goes next. Select a pathway to trace a matter from first instance to the Supreme Court, or expand any forum for the detail.</p>
+
+    <div class="route-bar reveal" id="routeBar" role="group" aria-label="Appellate pathway selector"></div>
+    <div class="route-summary" id="routeSummary" aria-live="polite"></div>
+
+    <div class="map-shell reveal">
+      <div class="map-wrap" id="mapWrap">
+        <svg id="route-svg" aria-hidden="true"></svg>
+        <div id="mapTiers"></div>
+      </div>
+      <p class="map-note">Pecuniary limits and appeal periods are stated as a practitioner&#8217;s working guide and change by amendment. Verify the current figures before filing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH ============ -->
+<section id="research">
+  <div class="wrap">
+    <span class="eyebrow reveal">03 &middot; Scholarship</span>
+    <h2 class="sec-title reveal">Research behind the practice</h2>
+    <p class="sec-lead reveal">Alongside litigation, my academic work focuses on banking law, financial regulation, capital markets and regulatory design, and on how legal rules shape institutional behaviour.</p>
+        <div class="research-grid">
+      <article class="r-card reveal">
+        <span class="r-tag">Financial Regulation</span>
+        <h3>The Secondary Competitiveness and Growth Objective in UK Financial Regulation</h3>
+        <p>Whether the post-FSMA 2023 competitiveness mandate risks encouraging deregulatory drift, examined through the regulatory behaviour of the PRA and the FCA. LLM dissertation, University of Edinburgh.</p>
+      </article>
+      <article class="r-card reveal">
+        <span class="r-tag">Banking Law</span>
+        <h3>Banking Regulation After the Global Financial Crisis</h3>
+        <p>Prudential regulation, supervisory objectives and the Basel standards, and the post-crisis balance between financial stability, institutional resilience, competitiveness and growth.</p>
+      </article>
+      <article class="r-card reveal">
+        <span class="r-tag">Capital Markets</span>
+        <h3>Misleading Financial Information and Capital Markets</h3>
+        <p>Private and public law mechanisms addressing false or misleading information in financial markets, including issuer liability, disclosure standards and the limits of enforcement.</p>
+      </article>
+      <article class="r-card reveal">
+        <span class="r-tag">Structured Finance</span>
+        <h3>Securitisation and Financial Alchemy</h3>
+        <p>The benefits, risks and regulatory challenges of securitisation: special purpose vehicles, tranching, liquidity creation, systemic-risk concerns and the post-crisis reforms.</p>
+      </article>
+    </div>
+    <p class="bridge reveal">This background is not decoration. It is what lets me read document-heavy disputes, banking matters and regulatory problems with more depth than the pleadings alone require.</p>
+    </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <span class="eyebrow reveal">04 &middot; Profile</span>
+    <h2 class="sec-title reveal">About</h2>
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>I am an <b>Advocate enrolled with the Sindh Bar Council</b>, practising civil litigation in Karachi. My work runs from the trial courts to the appellate forums: pleadings, interim relief, evidence and appeal, in property, contract and tenancy matters.</p>
+        <p>Before returning to practice in Pakistan, I read for an <b>LLM in International Banking Law and Finance at the University of Edinburgh</b>, graduating with Distinction, after an LLB from the University of London. That background shapes how I litigate: financial disputes are rarely just about the money claimed, they are about the regulatory architecture sitting behind the transaction.</p>
+        <p>Alongside practice, I hold the <b>CAMS certification</b> in anti-money laundering and maintain an active research interest in financial regulation, public law and the structure of the Pakistani court system, some of which you can see mapped on this page.</p>
+        <p>I take the unfashionable view that a lawyer&#8217;s first duty to a client is clarity: about the law, about the realistic outcomes, and about the cost of getting there.</p>
+        <div class="expect">
+          <b>What clients can expect</b>
+          Direct communication, careful review of documents, honest assessment of risks, and legal work prepared with seriousness. No false drama. No unnecessary complexity. No promises that the law itself does not support.
+        </div>
+      </div>
+      <aside class="card cred-panel reveal" aria-label="Credentials">
+        <h3>Credentials</h3>
+        <ul class="cred-list">
+          <li>
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M5 11v5c0 1.5 3 3 7 3s7-1.5 7-3v-5"/></svg></span>
+            <div><b>LLM, International Banking Law &amp; Finance</b><span>University of Edinburgh &middot; Distinction</span></div>
+          </li>
+          <li>
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5a2 2 0 012-2h13v18H6a2 2 0 01-2-2z"/><path d="M8 7h7M8 11h7"/></svg></span>
+            <div><b>LLB (Hons)</b><span>University of London</span></div>
+          </li>
+          <li>
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5L7 21l5-2.5L17 21l-1.5-7.5"/></svg></span>
+            <div><b>CAMS</b><span>Certified Anti-Money Laundering Specialist</span></div>
+          </li>
+          <li>
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></span>
+            <div><b>Advocate</b><span>Sindh Bar Council &middot; Karachi</span></div>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRO BONO ============ -->
+<section id="pro-bono">
+  <div class="wrap">
+    <span class="eyebrow reveal">05 &middot; Access to Justice</span>
+    <h2 class="sec-title reveal">Pro bono representation</h2>
+    <div class="probono-panel reveal">
+      <div class="pb-grid">
+        <div>
+          <p>The courts belong to everyone, but in practice they are easiest to reach for those who can pay. I set aside a portion of my practice for people who cannot. If you have a genuine legal grievance and no realistic means of engaging counsel, you are welcome to write to me.</p>
+          <p>Pro bono matters receive the same preparation, the same candour about prospects, and the same standard of advocacy as any paying brief. The only difference is the fee note.</p>
+          <div class="pb-foot">
+            <a class="btn btn-emerald" href="mailto:thenaumansuhail065@gmail.com?subject=Pro%20Bono%20Inquiry&body=Assalam-o-Alaikum%20Mr.%20Sohail%2C%0A%0AI%20am%20writing%20regarding%20a%20pro%20bono%20matter.%0A%0ABrief%20facts%3A%20%0AForum%20(if%20any%20case%20is%20pending)%3A%20%0AContact%20number%3A%20">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
+              Write about a pro bono matter
+            </a>
+            <span class="pb-caveat">Subject to schedule, merit and conflict checks.</span>
+          </div>
+        </div>
+        <div>
+          <ul class="pb-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Persons with disabilities facing barriers in courts and public institutions</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Widows, the elderly and others at risk of losing homes or property</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Low-income tenants and workers in genuine need of representation</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Matters raising access-to-justice or public-interest questions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <span class="eyebrow reveal">06 &middot; Get in Touch</span>
+    <h2 class="sec-title reveal">Contact</h2>
+    <p class="sec-lead reveal">For consultations, instructions or professional correspondence. When writing, briefly explain the issue, the city where the matter lies, the documents you hold, any deadline, and the outcome you seek. I respond to every serious inquiry.</p>
+    <div class="contact-grid">
+      <a class="c-card reveal" href="mailto:thenaumansuhail065@gmail.com">
+        <span class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></span>
+        <b>Email</b>
+        <span>thenaumansuhail065@gmail.com</span>
+      </a>
+      <a class="c-card reveal" href="tel:+923483996102">
+        <span class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span>
+        <b>Phone</b>
+        <span>+92 348 3996102</span>
+      </a>
+      <a class="c-card reveal" href="https://wa.me/923483996102" target="_blank" rel="noopener">
+        <span class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 01-13.4 7.8L3 21l1.3-4.4A9 9 0 1121 12z"/><path d="M9 10c.5 2.5 2.5 4.5 5 5l1.5-1.5 2 1c-.5 1.5-2 2-3.5 1.5-3-.9-5.6-3.5-6.5-6.5C7 8 7.5 6.5 9 6l1 2L9 10z"/></svg></span>
+        <b>WhatsApp</b>
+        <span>+92 348 3996102</span>
+      </a>
+      <a class="c-card reveal" href="https://www.linkedin.com/in/noman-sohail-52742b200/" target="_blank" rel="noopener">
+        <span class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.1M12 17v-4a2 2 0 014 0v4M12 10v1"/></svg></span>
+        <b>LinkedIn</b>
+        <span>noman-sohail</span>
+      </a>
+    </div>
+    <div class="consult-strip reveal">
+      <div>
+        <h3>Have a matter you want assessed?</h3>
+        <p>Send the brief facts and your availability. First consultations are about understanding the problem properly, not the meter running.</p>
+      </div>
+      <a class="btn btn-primary" href="mailto:thenaumansuhail065@gmail.com?subject=Consultation%20Request&body=Assalam-o-Alaikum%20Mr.%20Sohail%2C%0A%0AI%20would%20like%20to%20book%20a%20consultation.%0A%0ANature%20of%20matter%3A%20%0ACity%2Flocation%20of%20the%20matter%3A%20%0ADocuments%20available%3A%20%0ADeadline%20(if%20any)%3A%20%0APreferred%20date%2Ftime%3A%20%0AContact%20number%3A%20">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M3 7h18v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/><path d="M3 11h18"/></svg>
+        Book a consultation
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-in">
+      <div>
+        <div class="f-brand">Noman Sohail</div>
+        <div class="f-sub">Advocate &middot; Sindh Bar Council &middot; Karachi</div>
+      </div>
+      <nav class="f-links" aria-label="Footer">
         <a href="#services">Services</a>
+        <a href="#court-map">Court Map</a>
         <a href="#research">Research</a>
-        <a href="#probono">Pro Bono</a>
-        <a href="#credentials">Credentials</a>
-        <a class="nav-cta" href="#contact">Book a Consultation</a>
+        <a href="#pro-bono">Pro Bono</a>
+        <a href="Noman_Sohail_Resume%20(1).pdf" target="_blank" rel="noopener">CV</a>
       </nav>
     </div>
-  </header>
+    <p class="disclaimer">&copy; <span id="year"></span> Noman Sohail. The contents of this website, including the court hierarchy map, are general information for educational purposes and do not constitute legal advice. No advocate-client relationship is created by visiting this site or sending an inquiry. Statutory references and pecuniary limits should be independently verified against current law.</p>
+  </div>
+</footer>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="kicker">Advocate enrolled with the Sindh Bar Council</div>
-          <h1>Legal help that is <span class="gold-text">clear, strategic, and client-focused.</span></h1>
-          <div class="hero-subtitle">Civil Litigation · Property Disputes · Contracts · Banking & Financial Law · Regulatory Matters</div>
-          <p class="hero-text">
-            I assist clients in civil and property disputes, contractual matters, legal notices, pleadings, injunction-related matters, documentation issues, banking and financial law concerns, and regulatory problems. My work combines practical litigation, careful drafting, and advanced legal training from Pakistan and the United Kingdom.
-          </p>
+<script>
+/* ================= COURT DATA ================= */
+const TIERS = [
+  {
+    label: "Tier I · Apex Court",
+    nodes: [
+      {
+        id: "sc",
+        name: "Supreme Court of Pakistan",
+        statute: "Constitution of Pakistan, 1973 · Arts. 176\u2013191",
+        icon: "crown",
+        points: [
+          "Original jurisdiction in matters of public importance involving fundamental rights (Art. 184(3)).",
+          "Appellate jurisdiction over High Courts: appeals as of right and by leave (CPLA) under Art. 185.",
+          "Advisory jurisdiction on a reference by the President (Art. 186); review of its own judgments (Art. 188).",
+          "Decisions bind all other courts in Pakistan (Art. 189). Branch Registry at Karachi.",
+          "Also hears appeals from Service Tribunals (Art. 212(3)) and, through its Shariat Appellate Bench, from the Federal Shariat Court."
+        ],
+        appeal: ["Final court \u00b7 review under Art. 188 only"]
+      }
+    ]
+  },
+  {
+    label: "Tier II · Constitutional Courts",
+    nodes: [
+      {
+        id: "shc",
+        name: "High Court of Sindh",
+        statute: "Constitution, Arts. 175, 192\u2013203 · CPC 1908 · CrPC 1898",
+        icon: "pillars",
+        points: [
+          "Writ jurisdiction under Art. 199: certiorari, mandamus, prohibition, quo warranto and habeas corpus against public authorities.",
+          "Original civil jurisdiction at Karachi for suits above the prescribed value (currently PKR 15 million \u2014 verify before filing).",
+          "Appellate side: first and second appeals and revisions (ss. 96, 100, 115 CPC); criminal appeals and confirmation of death sentences (ss. 410, 374 CrPC).",
+          "Statutory appellate forum for Banking Courts (s. 22 FIO 2001), tax references (s. 133 ITO 2001), ATA and accountability appeals; company and admiralty jurisdiction.",
+          "Principal seat at Karachi with benches and circuit courts at Hyderabad, Sukkur, Larkana and Mirpurkhas."
+        ],
+        appeal: ["Supreme Court (Art. 185)", "Intra-court appeal (LRO 1972, s. 3) from original side"]
+      },
+      {
+        id: "fsc",
+        name: "Federal Shariat Court",
+        statute: "Constitution, Arts. 203A\u2013203J",
+        icon: "book",
+        points: [
+          "Examines whether laws are repugnant to the Injunctions of Islam (Art. 203D) and may strike them down prospectively.",
+          "Appellate and revisional jurisdiction in cases under the Hudood laws.",
+          "Suo motu power to examine any law within its remit."
+        ],
+        appeal: ["Shariat Appellate Bench, Supreme Court (Art. 203F)"]
+      }
+    ]
+  },
+  {
+    label: "Tier III · District Judiciary (Sindh)",
+    nodes: [
+      {
+        id: "dj",
+        name: "District & Sessions Judge",
+        statute: "Sindh Civil Courts Ordinance 1962 · CrPC 1898",
+        icon: "gavelless",
+        points: [
+          "Principal court of original civil jurisdiction in the district; administrative head of the district judiciary.",
+          "Civil side: first appeals against decrees of Civil Judges within the prescribed pecuniary limit; rent appeals (s. 21, SRPO 1979); family appeals (s. 14, Family Courts Act 1964).",
+          "Sessions side: trials of offences punishable with death or life imprisonment; appeals against convictions by Magistrates (s. 408 CrPC); bail and criminal revisions.",
+          "Additional District & Sessions Judges exercise the same powers on cases made over to them, including designated Gender-Based Violence and consumer courts."
+        ],
+        appeal: ["High Court of Sindh (appeal / revision)"]
+      },
+      {
+        id: "scj",
+        name: "Senior Civil Judge",
+        statute: "Sindh Civil Courts Ordinance 1962",
+        icon: "scale",
+        points: [
+          "Distributes and supervises civil business among Civil Judges in the district.",
+          "Exercises an enhanced pecuniary class of civil jurisdiction.",
+          "Deals with succession and guardianship-related civil work assigned under the relevant statutes."
+        ],
+        appeal: ["District Judge or High Court, by value"]
+      },
+      {
+        id: "cj",
+        name: "Civil Judge & Judicial Magistrate",
+        statute: "Sindh Civil Courts Ordinance 1962 · ss. 30, 32 CrPC",
+        icon: "scale",
+        points: [
+          "The workhorse of the system: tries civil suits within its pecuniary class (Class I, II or III).",
+          "Wears a second hat as Judicial Magistrate: criminal trials with sentencing powers graded by class (a Magistrate First Class may pass sentences up to three years).",
+          "Grants interim injunctions, appoints commissions and conducts execution proceedings in suits before it."
+        ],
+        appeal: ["Civil decree \u2192 District Judge or High Court, by value", "Criminal conviction \u2192 Sessions Court (s. 408 CrPC)"]
+      },
+      {
+        id: "fam",
+        name: "Family Court",
+        statute: "Family Courts Act 1964 (as amended in Sindh)",
+        icon: "home",
+        points: [
+          "Exclusive jurisdiction over dissolution of marriage, dower, dowry, maintenance, custody and guardianship, and jactitation.",
+          "Summary, comparatively informal procedure designed for speed; strict evidence rules relaxed.",
+          "Decrees for dissolution on the ground of khula are not appealable."
+        ],
+        appeal: ["District Judge (s. 14) \u00b7 thereafter Art. 199 in appropriate cases"]
+      },
+      {
+        id: "rent",
+        name: "Rent Controller",
+        statute: "Sindh Rented Premises Ordinance 1979",
+        icon: "key",
+        points: [
+          "Eviction of tenants (s. 15) on grounds including default, personal bona fide need and reconstruction.",
+          "Fixation of fair rent and orders for deposit of rent during proceedings.",
+          "A creature of statute: jurisdiction confined strictly to the Ordinance."
+        ],
+        appeal: ["First Rent Appeal \u2192 District Judge (s. 21)", "Then Art. 199, High Court"]
+      }
+    ]
+  },
+  {
+    label: "Tier IV · Special Courts",
+    nodes: [
+      {
+        id: "bank",
+        name: "Banking Court",
+        statute: "Financial Institutions (Recovery of Finances) Ordinance 2001",
+        icon: "bank",
+        focus: true,
+        points: [
+          "Exclusive jurisdiction over suits for recovery of finances between customers and financial institutions (s. 9).",
+          "The leave-to-defend regime (s. 10): the defendant must obtain leave, disclosing a substantial question, before contesting; default invites an immediate decree.",
+          "Interim decrees, sale of mortgaged property and execution with the powers of a civil court; criminal jurisdiction over offences under the Ordinance.",
+          "A core forum of my practice and research interest in banking litigation."
+        ],
+        appeal: ["High Court, Division Bench (s. 22) \u2014 within 30 days"]
+      },
+      {
+        id: "atc",
+        name: "Anti-Terrorism Court",
+        statute: "Anti-Terrorism Act 1997",
+        icon: "shield",
+        points: [
+          "Trial of scheduled offences under the Act with statutory timelines aimed at expedition.",
+          "Special regimes for remand, protection of witnesses and transfer of cases.",
+          "Constituted and supervised in consultation with the High Court."
+        ],
+        appeal: ["High Court (s. 25) \u2014 within 15 days"]
+      },
+      {
+        id: "nab",
+        name: "Accountability Court",
+        statute: "National Accountability Ordinance 1999",
+        icon: "shield",
+        points: [
+          "Trial of references involving corruption, corrupt practices and assets beyond known sources of income.",
+          "Distinct arrest, bail and plea-bargain framework under the Ordinance, as repeatedly reshaped by amendment."
+        ],
+        appeal: ["High Court (s. 32) \u2014 within 10 days"]
+      },
+      {
+        id: "consumer",
+        name: "Consumer Protection Court",
+        statute: "Sindh Consumer Protection Act 2014",
+        icon: "cart",
+        points: [
+          "Claims for damages arising from defective products and faulty services.",
+          "Presided over by judges of District Judge rank designated under the Act; simplified claim procedure."
+        ],
+        appeal: ["High Court of Sindh"]
+      },
+      {
+        id: "labour",
+        name: "Labour Court",
+        statute: "Sindh Industrial Relations Act 2013",
+        icon: "users",
+        points: [
+          "Individual grievance petitions, unfair labour practices and industrial disputes within the province.",
+          "Trans-provincial establishments fall to the National Industrial Relations Commission instead."
+        ],
+        appeal: ["Sindh Labour Appellate Tribunal", "NIRC for trans-provincial matters"]
+      },
+      {
+        id: "env",
+        name: "Environmental Protection Tribunal",
+        statute: "Sindh Environmental Protection Act 2014",
+        icon: "leaf",
+        points: [
+          "Contraventions of environmental standards, EIA conditions and protection orders within Sindh.",
+          "Mixed membership of judicial and technical members."
+        ],
+        appeal: ["High Court of Sindh"]
+      }
+    ]
+  },
+  {
+    label: "Tier V · Tribunals, Revenue & Quasi-Judicial Forums",
+    nodes: [
+      {
+        id: "sst",
+        name: "Sindh Service Tribunal",
+        statute: "Sindh Service Tribunals Act 1973 · Art. 212",
+        icon: "briefcase",
+        points: [
+          "Exclusive jurisdiction over the terms and conditions of service of provincial civil servants, after departmental remedies are exhausted.",
+          "The jurisdiction of ordinary courts, including the High Court, is constitutionally barred in such matters (Art. 212)."
+        ],
+        appeal: ["Supreme Court directly, by leave (Art. 212(3))"]
+      },
+      {
+        id: "atir",
+        name: "Appellate Tribunal Inland Revenue",
+        statute: "Income Tax Ordinance 2001 · Sales Tax Act 1990",
+        icon: "calc",
+        points: [
+          "The apex fact-finding forum in the tax chain: assessment by an Officer of Inland Revenue, appeal to the Commissioner (Appeals), then to the Tribunal.",
+          "Recent amendments have re-routed appeals by pecuniary value between the Commissioner (Appeals) and the Tribunal \u2014 verify the current thresholds.",
+          "Findings of fact end here; only questions of law travel upward."
+        ],
+        appeal: ["Reference to High Court on a question of law (s. 133 ITO 2001)", "Then Supreme Court"]
+      },
+      {
+        id: "bor",
+        name: "Board of Revenue, Sindh",
+        statute: "Sindh Land Revenue Act 1967",
+        icon: "map",
+        points: [
+          "The revenue hierarchy: Mukhtiarkar \u2192 Assistant / Deputy Commissioner \u2192 Commissioner \u2192 Member, Board of Revenue, through appeal, review and revision (ss. 161\u2013164).",
+          "Mutations, record-of-rights and partition disputes live here; questions of title belong to the civil courts.",
+          "Revenue orders are amenable to the writ jurisdiction once departmental remedies are exhausted."
+        ],
+        appeal: ["Art. 199, High Court of Sindh (writ)"]
+      },
+      {
+        id: "ombuds",
+        name: "Ombudsman Institutions",
+        statute: "Wafaqi Mohtasib Order 1983 · BCO 1962, Part IVA · FTO Ordinance 2000",
+        icon: "ear",
+        points: [
+          "Wafaqi Mohtasib and Provincial Mohtasib (Sindh) for maladministration by government agencies; Federal Tax Ombudsman for tax maladministration.",
+          "Banking Mohtasib for complaints against banks: a fast, fee-free alternative to litigation for retail banking grievances.",
+          "Not courts, but an increasingly important first stop before, or instead of, formal proceedings."
+        ],
+        appeal: ["Representation to the President / Governor against findings"]
+      }
+    ]
+  }
+];
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:thenaumansuhail065@gmail.com">Email for Consultation →</a>
-            <a class="btn btn-secondary" href="#services">View Legal Services</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/noman-sohail-52742b200/" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
+/* ================= ROUTES ================= */
+const ROUTES = [
+  {
+    id: "civil", name: "Civil suit", color: "#22d3ee",
+    nodes: ["cj", "dj", "shc", "sc"],
+    chain: ["Civil Judge (trial)", "District Judge (first appeal)", "High Court (second appeal / revision)", "Supreme Court (CPLA)"],
+    note: "An ordinary-value civil suit. Where the value exceeds the District Court\u2019s appellate limit, the first appeal goes straight to the High Court; the highest-value suits at Karachi begin on the High Court\u2019s original side."
+  },
+  {
+    id: "criminal", name: "Criminal trial", color: "#fb7185",
+    nodes: ["cj", "dj", "shc", "sc"],
+    chain: ["Judicial Magistrate (trial)", "Sessions Court (appeal, s. 408 CrPC)", "High Court (appeal / revision)", "Supreme Court"],
+    note: "For offences triable by a Magistrate. Serious offences are tried by the Sessions Court at first instance, with appeal to the High Court (and confirmation of death sentences under s. 374 CrPC)."
+  },
+  {
+    id: "family", name: "Family matter", color: "#f9a8d4",
+    nodes: ["fam", "dj", "shc"],
+    chain: ["Family Court (decree)", "District Judge (appeal, s. 14)", "High Court (Art. 199, where available)"],
+    note: "Khula decrees are non-appealable; constitutional petitions lie only within the narrow limits the case law allows."
+  },
+  {
+    id: "banking", name: "Banking recovery \u2605", color: "#f1c45f",
+    nodes: ["bank", "shc", "sc"],
+    chain: ["Banking Court (suit + leave to defend)", "High Court, Division Bench (s. 22, 30 days)", "Supreme Court (CPLA)"],
+    note: "The FIO 2001 route: a recovery suit, the leave-to-defend gate at s. 10, then a single statutory appeal to a Division Bench of the High Court."
+  },
+  {
+    id: "tax", name: "Tax appeal", color: "#a78bfa",
+    nodes: ["atir", "shc", "sc"],
+    chain: ["Commissioner (Appeals)", "Appellate Tribunal IR", "High Court (reference, s. 133)", "Supreme Court"],
+    note: "Facts are settled at the Tribunal; only questions of law reach the High Court by reference, and onward to the Supreme Court."
+  },
+  {
+    id: "writ", name: "Constitutional petition", color: "#34d399",
+    nodes: ["shc", "sc"],
+    chain: ["High Court, Art. 199 (writ)", "Supreme Court, Art. 185 (appeal)"],
+    note: "Judicial review of executive or administrative action where no adequate alternate remedy exists. Matters of public importance involving fundamental rights may also be taken directly to the Supreme Court under Art. 184(3)."
+  }
+];
 
-          <div class="trust-row">
-            <div class="trust-pill">Karachi-based advocate</div>
-            <div class="trust-pill">Civil litigation matters</div>
-            <div class="trust-pill">Property and documentation disputes</div>
-            <div class="trust-pill">Financial law background</div>
+/* ================= ICONS ================= */
+const ICONS = {
+  crown: '<path d="M3 17h18M4 17l1.5-9L10 12l2-7 2 7 4.5-4L20 17"/>',
+  pillars: '<path d="M3 21h18M4 9h16M12 3L4 8h16L12 3zM6 9v9M10 9v9M14 9v9M18 9v9"/>',
+  book: '<path d="M4 19V5a2 2 0 012-2h13v18H6a2 2 0 01-2-2zM20 17H6"/>',
+  gavelless: '<path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/>',
+  scale: '<path d="M12 4v16M7 20h10M12 6L6 8m6-2l6 2M6 8l-2.5 5a3 3 0 005 0L6 8zm12 0l-2.5 5a3 3 0 005 0L18 8z"/>',
+  home: '<path d="M3 11l9-7 9 7M5 9v11h14V9M10 20v-6h4v6"/>',
+  key: '<circle cx="8" cy="14" r="4"/><path d="M11 11l8-8m-3 3l3 3m-6 0l2 2"/>',
+  bank: '<path d="M3 21h18M4 10h16M12 3L4 9h16L12 3zM6 10v8M12 10v8M18 10v8"/>',
+  shield: '<path d="M12 3l8 3v6c0 4.5-3.5 7.8-8 9-4.5-1.2-8-4.5-8-9V6l8-3z"/>',
+  cart: '<circle cx="9" cy="20" r="1.5"/><circle cx="17" cy="20" r="1.5"/><path d="M3 4h2l2.5 11h10L20 7H6"/>',
+  users: '<circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5M16 4.5a3.5 3.5 0 010 7M21 20c0-2.5-1.8-4.2-4-4.8"/>',
+  leaf: '<path d="M5 20c0-9 5-15 14-16-1 9-7 14-14 16zM5 20c3-4 7-8 11-11"/>',
+  briefcase: '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2M3 13h18"/>',
+  calc: '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 12h.1M12 12h.1M16 12h.1M8 16h.1M12 16h.1M16 16h.1"/>',
+  map: '<path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/>',
+  ear: '<path d="M12 4a6 6 0 016 6c0 3-2 4-2 7a3 3 0 01-6 0M6 10a6 6 0 016-6"/><path d="M12 9a2.5 2.5 0 012.5 2.5c0 1.5-1.5 2-1.5 3.5"/>'
+};
+function ico(name){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">'+(ICONS[name]||ICONS.scale)+'</svg>';}
+
+/* ================= RENDER MAP ================= */
+const mapTiers = document.getElementById("mapTiers");
+TIERS.forEach(tier => {
+  const t = document.createElement("div");
+  t.className = "tier";
+  let cards = "";
+  tier.nodes.forEach(n => {
+    cards += `
+    <div class="node${n.focus ? " focus-node" : ""}" data-id="${n.id}" id="node-${n.id}">
+      <button class="node-head" aria-expanded="false" aria-controls="body-${n.id}">
+        <span class="node-ico" aria-hidden="true">${ico(n.icon)}</span>
+        <span class="node-meta">
+          <span class="node-name">${n.name}${n.focus ? '<span class="focus-chip">Focus Area</span>' : ""}</span>
+          <span class="node-statute">${n.statute}</span>
+        </span>
+        <span class="node-chev" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+      </button>
+      <div class="node-body" id="body-${n.id}">
+        <div class="node-body-in">
+          <ul>${n.points.map(p => `<li>${p}</li>`).join("")}</ul>
+          <div class="appeal-line">
+            <span class="al-label">Appeal lies to</span>
+            ${n.appeal.map(a => `<span class="al-chip">${a}</span>`).join("")}
           </div>
         </div>
-
-        <aside class="portrait-card" aria-label="Noman Sohail profile photo">
-          <div class="portrait-wrap">
-            <img src="1776953978502.png" alt="Noman Sohail, Advocate in Karachi" />
-            <div class="portrait-overlay">
-              <strong>Noman Sohail</strong>
-              <p>Advocate | Sindh Bar Council<br />LLM International Banking Law and Finance, University of Edinburgh</p>
-            </div>
-          </div>
-        </aside>
       </div>
-    </section>
+    </div>`;
+  });
+  t.innerHTML = `<div class="tier-head"><span class="t-label">${tier.label}</span><span class="t-line"></span></div><div class="tier-grid">${cards}</div>`;
+  mapTiers.appendChild(t);
+});
 
-    <section id="about">
-      <div class="container">
-        <div class="intro-grid">
-          <div class="intro-card glass">
-            <div class="section-label">For Clients</div>
-            <h2>When a legal problem becomes personal, strategy matters.</h2>
-            <p>
-              Litigation is not only about filing a case. It is about understanding the documents, identifying the legal right, choosing the correct remedy, drafting clearly, and taking procedural steps at the right time. A weak legal strategy can turn even a genuine claim into a difficult fight.
-            </p>
-            <p>
-              My focus is to help clients understand where they stand legally, what documents matter, what remedy may be available, and how their matter can be approached through notices, negotiation, civil proceedings, injunctions, or other appropriate legal steps.
-            </p>
-          </div>
+/* expand / collapse */
+mapTiers.addEventListener("click", e => {
+  const head = e.target.closest(".node-head");
+  if (!head) return;
+  const node = head.parentElement;
+  const open = node.classList.toggle("open");
+  head.setAttribute("aria-expanded", open ? "true" : "false");
+  setTimeout(drawRoute, 480); /* re-draw lines after height settles */
+});
 
-          <div class="client-promise">
-            <h3>What clients can expect</h3>
-            <p>
-              Direct communication, careful review of documents, honest assessment of risks, and legal work prepared with seriousness. No false drama. No unnecessary complexity. No promises that law itself does not support.
-            </p>
-            <div class="stats">
-              <div class="stat">
-                <strong>LLM</strong>
-                <span>University of Edinburgh</span>
-              </div>
-              <div class="stat">
-                <strong>SBC</strong>
-                <span>Enrolled Advocate</span>
-              </div>
-              <div class="stat">
-                <strong>CAMS</strong>
-                <span>Financial crime expertise</span>
-              </div>
-              <div class="stat">
-                <strong>KHI</strong>
-                <span>Karachi practice</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+/* ================= ROUTE ENGINE ================= */
+const routeBar = document.getElementById("routeBar");
+const routeSummary = document.getElementById("routeSummary");
+const svg = document.getElementById("route-svg");
+const mapWrap = document.getElementById("mapWrap");
+let activeRoute = null;
 
-    <section id="services">
-      <div class="container">
-        <div class="section-head">
-          <div class="section-label">Legal Services</div>
-          <h2>Civil litigation and legal support for individuals, families, and businesses.</h2>
-          <p>
-            I handle and assist with a wide range of civil legal matters, with particular strength in drafting, document analysis, legal research, and strategic preparation.
-          </p>
-        </div>
+ROUTES.forEach(r => {
+  const b = document.createElement("button");
+  b.className = "route-btn";
+  b.style.setProperty("--sw", r.color);
+  b.innerHTML = `<span class="swatch" aria-hidden="true"></span>${r.name}`;
+  b.setAttribute("aria-pressed", "false");
+  b.addEventListener("click", () => setRoute(activeRoute === r.id ? null : r.id));
+  b.dataset.route = r.id;
+  routeBar.appendChild(b);
+});
+const clearBtn = document.createElement("button");
+clearBtn.className = "route-btn clear-btn";
+clearBtn.textContent = "Clear";
+clearBtn.addEventListener("click", () => setRoute(null));
+routeBar.appendChild(clearBtn);
 
-        <div class="services-grid">
-          <article class="service-card">
-            <div class="service-icon">⚖</div>
-            <h3>Civil Litigation</h3>
-            <p>Suits for declaration, injunctions, civil claims, applications, pleadings, objections, procedural steps, and court-related documentation.</p>
-            <div class="mini">Suits · Applications · Injunctions</div>
-          </article>
+function setRoute(id){
+  activeRoute = id;
+  const route = ROUTES.find(r => r.id === id) || null;
+  document.querySelectorAll(".route-btn").forEach(b => {
+    const on = b.dataset.route === id;
+    b.classList.toggle("active", on);
+    b.setAttribute("aria-pressed", on ? "true" : "false");
+  });
+  document.querySelectorAll(".node").forEach(n => {
+    n.classList.remove("dim", "lit");
+    n.style.removeProperty("--nc");
+    const badge = n.querySelector(".step-badge");
+    if (badge) badge.remove();
+  });
+  if (!route){
+    routeSummary.classList.remove("show");
+    routeSummary.innerHTML = "";
+    svg.innerHTML = "";
+    return;
+  }
+  document.querySelectorAll(".node").forEach(n => {
+    const idx = route.nodes.indexOf(n.dataset.id);
+    if (idx === -1){ n.classList.add("dim"); }
+    else {
+      n.classList.add("lit");
+      n.style.setProperty("--nc", route.color);
+      const badge = document.createElement("span");
+      badge.className = "step-badge";
+      badge.style.setProperty("--nc", route.color);
+      badge.textContent = idx + 1;
+      n.appendChild(badge);
+    }
+  });
+  routeSummary.style.setProperty("--rs", route.color);
+  routeSummary.innerHTML =
+    `<div class="rs-title">${route.name} \u00b7 appellate pathway</div>
+     <div class="rs-chain">${route.chain.map((s,i)=> (i? '<span class="arr">\u2192</span>':'') + `<span class="step">${s}</span>`).join("")}</div>
+     <div class="rs-note">${route.note}</div>`;
+  routeSummary.classList.add("show");
+  drawRoute();
+  const first = document.getElementById("node-" + route.nodes[0]);
+  if (first){
+    const r = first.getBoundingClientRect();
+    if (r.top < 0 || r.bottom > innerHeight) first.scrollIntoView({behavior:"smooth", block:"center"});
+  }
+}
 
-          <article class="service-card">
-            <div class="service-icon">⌂</div>
-            <h3>Property Disputes</h3>
-            <p>Title, possession, sale agreements, allotment issues, documentation problems, mutation/revenue record issues, and property-related civil disputes.</p>
-            <div class="mini">Title · Possession · Documents</div>
-          </article>
+function roundedElbow(pts, rad){
+  if (pts.length < 2) return "";
+  let d = `M ${pts[0].x} ${pts[0].y}`;
+  for (let i = 1; i < pts.length - 1; i++){
+    const p0 = pts[i-1], p1 = pts[i], p2 = pts[i+1];
+    const v1 = {x: p1.x - p0.x, y: p1.y - p0.y};
+    const v2 = {x: p2.x - p1.x, y: p2.y - p1.y};
+    const l1 = Math.hypot(v1.x, v1.y) || 1, l2 = Math.hypot(v2.x, v2.y) || 1;
+    const r = Math.min(rad, l1/2, l2/2);
+    const a = {x: p1.x - v1.x/l1*r, y: p1.y - v1.y/l1*r};
+    const b = {x: p1.x + v2.x/l2*r, y: p1.y + v2.y/l2*r};
+    d += ` L ${a.x} ${a.y} Q ${p1.x} ${p1.y} ${b.x} ${b.y}`;
+  }
+  const last = pts[pts.length-1];
+  d += ` L ${last.x} ${last.y}`;
+  return d;
+}
 
-          <article class="service-card">
-            <div class="service-icon">✍</div>
-            <h3>Legal Notices & Drafting</h3>
-            <p>Legal notices, replies, applications, plaints, written statements, affidavits, statements, and document-based legal correspondence.</p>
-            <div class="mini">Notices · Replies · Pleadings</div>
-          </article>
+function drawRoute(){
+  svg.innerHTML = "";
+  const route = ROUTES.find(r => r.id === activeRoute);
+  if (!route) return;
+  const wrapBox = mapWrap.getBoundingClientRect();
+  svg.setAttribute("viewBox", `0 0 ${wrapBox.width} ${wrapBox.height}`);
+  const gutterX = Math.max(10, parseFloat(getComputedStyle(mapWrap).paddingLeft) / 2);
+  const anchors = route.nodes.map(id => {
+    const el = document.getElementById("node-" + id);
+    if (!el) return null;
+    const b = el.getBoundingClientRect();
+    return {x: b.left - wrapBox.left, y: b.top - wrapBox.top + Math.min(34, b.height/2)};
+  }).filter(Boolean);
+  /* route runs from the apex downward; nodes listed bottom-up, so reverse for drawing top-to-bottom */
+  const seq = anchors.slice().reverse();
+  for (let i = 0; i < seq.length - 1; i++){
+    const a = seq[i], b = seq[i+1];
+    const pts = [ a, {x: gutterX, y: a.y}, {x: gutterX, y: b.y}, b ];
+    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttribute("d", roundedElbow(pts, 14));
+    path.setAttribute("stroke", route.color);
+    path.style.color = route.color;
+    svg.appendChild(path);
+  }
+  anchors.forEach(p => {
+    const c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    c.setAttribute("cx", p.x); c.setAttribute("cy", p.y); c.setAttribute("r", 4.2);
+    c.setAttribute("fill", route.color);
+    c.style.color = route.color;
+    svg.appendChild(c);
+  });
+}
+let rT;
+addEventListener("resize", () => { clearTimeout(rT); rT = setTimeout(drawRoute, 180); });
 
-          <article class="service-card">
-            <div class="service-icon">▣</div>
-            <h3>Contracts & Documentation</h3>
-            <p>Review and drafting support for agreements, undertakings, settlement terms, business arrangements, and legally sensitive documents.</p>
-            <div class="mini">Agreements · Review · Risk</div>
-          </article>
+/* ================= NAV / REVEAL / MISC ================= */
+const burger = document.getElementById("navBurger");
+const links = document.getElementById("navLinks");
+burger.addEventListener("click", () => {
+  const open = links.classList.toggle("open");
+  burger.setAttribute("aria-expanded", open ? "true" : "false");
+});
+links.addEventListener("click", e => { if (e.target.tagName === "A") links.classList.remove("open"); });
 
-          <article class="service-card">
-            <div class="service-icon">◈</div>
-            <h3>Banking & Financial Matters</h3>
-            <p>Bank-customer issues, financial disputes, compliance-related concerns, recovery matters, documentation issues, and financial regulatory questions.</p>
-            <div class="mini">Banks · Finance · Regulation</div>
-          </article>
+if ("IntersectionObserver" in window){
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
+  }, {threshold: .12});
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+} else {
+  document.querySelectorAll(".reveal").forEach(el => el.classList.add("in"));
+}
 
-          <article class="service-card">
-            <div class="service-icon">◎</div>
-            <h3>Public & Regulatory Issues</h3>
-            <p>Matters involving public authorities, administrative action, documentation from government bodies, regulatory issues, and rights-based legal remedies.</p>
-            <div class="mini">Authorities · Remedies · Rights</div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="research">
-      <div class="container">
-        <div class="section-head">
-          <div class="section-label">Academic Research</div>
-          <h2>Financial law scholarship behind the litigation practice.</h2>
-          <p>
-            Alongside civil litigation, my academic work focuses on banking law, financial regulation, capital markets, regulatory design, and the relationship between legal rules and institutional behaviour.
-          </p>
-        </div>
-
-        <div class="research-grid">
-          <article class="research-card">
-            <div class="research-tag">Financial Regulation</div>
-            <h3>The Secondary Competitiveness and Growth Objective in UK Financial Regulation</h3>
-            <p>
-              Research on whether the UK’s post-FSMA 2023 competitiveness mandate risks encouraging deregulatory drift within financial regulation, especially through the regulatory behaviour of the PRA and FCA.
-            </p>
-          </article>
-
-          <article class="research-card">
-            <div class="research-tag">Banking Law</div>
-            <h3>Banking Regulation After the Global Financial Crisis</h3>
-            <p>
-              Analysis of prudential regulation, supervisory objectives, Basel standards, and the post-crisis balance between financial stability, institutional resilience, competitiveness, and growth.
-            </p>
-          </article>
-
-          <article class="research-card">
-            <div class="research-tag">Capital Markets</div>
-            <h3>Misleading Financial Information and Capital Markets</h3>
-            <p>
-              Critical engagement with private and public law mechanisms addressing false or misleading information in financial markets, including issuer liability, disclosure standards, and enforcement limits.
-            </p>
-          </article>
-
-          <article class="research-card">
-            <div class="research-tag">Structured Finance</div>
-            <h3>Securitisation and Financial Alchemy</h3>
-            <p>
-              Work on the benefits, risks, and regulatory challenges of securitisation, including SPVs, tranching, liquidity creation, systemic-risk concerns, and post-crisis reforms.
-            </p>
-          </article>
-        </div>
-
-        <div class="research-note">
-          This research background strengthens my ability to analyse document-heavy disputes, banking issues, commercial questions, regulatory problems, and legally complex civil matters with greater depth and precision.
-        </div>
-      </div>
-    </section>
-
-    <section id="probono">
-      <div class="container">
-        <div class="probono-box">
-          <div>
-            <div class="probono-badge">✦</div>
-            <div class="section-label">Pro Bono Work</div>
-            <h2>Open to selected pro bono matters.</h2>
-            <p>
-              I am open to taking selected pro bono or reduced-fee matters, especially where the issue involves genuine hardship, access to justice, unlawful administrative conduct, basic civil rights, documentation barriers, or public-interest concerns.
-            </p>
-          </div>
-          <div class="probono-list">
-            <div>Cases involving genuine inability to afford legal assistance may be considered.</div>
-            <div>Priority may be given to matters involving documentation, civil rights, public authorities, or urgent legal harm.</div>
-            <div>Pro bono support depends on time, urgency, merits of the matter, and available capacity.</div>
-            <div>Initial contact should clearly explain the facts, documents available, urgency, and the help required.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="credentials">
-      <div class="container">
-        <div class="section-head">
-          <div class="section-label">Credentials</div>
-          <h2>Legal education, professional enrolment, and specialist financial law training.</h2>
-          <p>
-            My legal background combines Pakistani practice, English legal foundations, and advanced financial law education from the United Kingdom.
-          </p>
-        </div>
-
-        <div class="credentials-grid">
-          <div class="credential">
-            <span>Professional</span>
-            <h3>Advocate, Sindh Bar Council</h3>
-            <p>Enrolled as an Advocate in Pakistan and based in Karachi.</p>
-          </div>
-
-          <div class="credential">
-            <span>Postgraduate</span>
-            <h3>LLM International Banking Law and Finance</h3>
-            <p>University of Edinburgh; focused on banking regulation, financial supervision, capital markets, and financial law.</p>
-          </div>
-
-          <div class="credential">
-            <span>Legal Foundation</span>
-            <h3>Qualifying Law Degree</h3>
-            <p>Training in core English law subjects including contract, tort, public law, criminal law, land law, equity, and jurisprudence.</p>
-          </div>
-
-          <div class="credential">
-            <span>Financial Crime</span>
-            <h3>CAMS Certified</h3>
-            <p>Certified Anti-Money Laundering Specialist with knowledge of AML, financial crime risk, due diligence, and banking controls.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <div class="container contact-grid">
-        <div class="contact-panel glass">
-          <div class="section-label">Contact</div>
-          <h2>Need legal assistance? Start with a clear message.</h2>
-          <p>
-            For consultation requests, briefly explain your legal issue, the city/location of the matter, the documents available, any upcoming deadline, and what outcome you are seeking.
-          </p>
-          <div class="contact-actions">
-            <a class="btn btn-primary" href="mailto:thenaumansuhail065@gmail.com?subject=Legal%20Consultation%20Request">Email for Consultation →</a>
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/noman-sohail-52742b200/" target="_blank" rel="noopener">Connect on LinkedIn</a>
-          </div>
-        </div>
-
-        <div class="contact-card glass">
-          <a class="contact-link" href="mailto:thenaumansuhail065@gmail.com">
-            <strong>thenaumansuhail065@gmail.com</strong>
-            <span>Email</span>
-          </a>
-          <a class="contact-link" href="https://www.linkedin.com/in/noman-sohail-52742b200/" target="_blank" rel="noopener">
-            <strong>LinkedIn Profile</strong>
-            <span>Open</span>
-          </a>
-          <div class="contact-item">
-            <strong>Karachi, Pakistan</strong>
-            <span>Location</span>
-          </div>
-          <div class="contact-item">
-            <strong>Civil · Property · Contracts · Banking · Regulatory</strong>
-            <span>Areas</span>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Noman Sohail. All rights reserved.</span>
-      <span>Advocate · Civil Litigation · Property · Banking & Financial Law</span>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
